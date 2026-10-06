@@ -1,0 +1,13 @@
+{
+  "name": "solarmais-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/styles.css --watch",
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/styles.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
