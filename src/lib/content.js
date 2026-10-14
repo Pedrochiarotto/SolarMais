@@ -12,6 +12,20 @@ const query = `{
   }
 }`;
 let pending;
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+const withBase = (value) => {
+  if (!value || /^(?:https?:|data:|blob:)/i.test(value)) return value;
+  return `${basePath}${value.startsWith('/') ? value : `/${value}`}`;
+};
+const localContent = () => ({
+  ...defaults,
+  logo: withBase(defaults.logo),
+  heroImage: withBase(defaults.heroImage),
+  projects: demoProjects.map(project => ({
+    ...project,
+    photos: (project.photos || []).map(photo => ({ ...photo, src: withBase(photo.src) })),
+  })),
+});
 export function getContent() {
   // One published snapshot per build; dev reloads on each request.
   if (import.meta.env.DEV) return loadContent();
@@ -19,12 +33,12 @@ export function getContent() {
 }
 async function loadContent() {
   if (import.meta.env.USE_SANITY !== 'true') {
-    return { ...defaults, projects: demoProjects };
+    return localContent();
   }
 
   const projectId = import.meta.env.SANITY_PROJECT_ID;
   const dataset = import.meta.env.SANITY_DATASET;
-  if (!projectId && !dataset) return { ...defaults, projects: demoProjects };
+  if (!projectId && !dataset) return localContent();
   if (!projectId || !dataset) throw new Error('Configure SANITY_PROJECT_ID e SANITY_DATASET juntos.');
   const client = createClient({ projectId, dataset, apiVersion: '2025-02-19',
     useCdn: false, perspective: 'published', token: import.meta.env.SANITY_API_READ_TOKEN || undefined,

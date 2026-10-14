@@ -3,6 +3,7 @@ import Layout from '../components/Layout.astro';
 import { getContent } from '../lib/content.js';
 const content = await getContent();
 const page = content.home;
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <Layout content={content} title={content.siteTitle}>
 <main id="conteudo" tabindex="-1">
@@ -79,7 +80,7 @@ const page = content.home;
     </section>
 
     <section id="projetos" class="section-space" aria-labelledby="projects-title">
-      <div class="page-shell portfolio-teaser"><div><h2 id="projects-title" class="section-heading">{page.projetos.text1}</h2><p class="section-copy mt-6">{page.projetos.text2}</p><a class="button button-primary mt-8" href="/projetos/">{page.projetos.text3}</a></div><figure><img src={content.heroImage} width="1536" height="1024" alt="Ilustração de painéis solares sobre um telhado" loading="lazy"><figcaption>{page.projetos.text4}</figcaption></figure></div>
+      <div class="page-shell portfolio-teaser"><div><h2 id="projects-title" class="section-heading">{page.projetos.text1}</h2><p class="section-copy mt-6">{page.projetos.text2}</p><a class="button button-primary mt-8" href={`${base}projetos/`}>{page.projetos.text3}</a></div><figure><img src={content.heroImage} width="1536" height="1024" alt="Ilustração de painéis solares sobre um telhado" loading="lazy"><figcaption>{page.projetos.text4}</figcaption></figure></div>
     </section>
 
     <section id="beneficios" class="section-space benefits-stage bg-surface-raised" aria-labelledby="benefits-title">

@@ -1,11 +1,13 @@
 (() => {
+  const basePath = (document.body.dataset.basePath || '/').replace(/\/$/, '');
+  const withBase = value => `${basePath}${value.startsWith('/') ? value : `/${value}`}`;
   const data = document.getElementById('project-data');
   const published = data ? JSON.parse(data.textContent) : (window.SOLARMAIS_PROJECTS || []);
   const preview = !data && published.length === 0;
   const projects = preview ? [{
     id: 'previa-residencial', title: 'Instalação residencial — exemplo', category: 'Residencial',
     description: 'Exemplo de apresentação. Aqui entram a história da obra, as necessidades do cliente e a solução instalada. Substitua este conteúdo por informações de um projeto real antes de publicá-lo como obra realizada.',
-    photos: [{ src: '/assets/images/solar-rooftop-hero.jpg', alt: 'Imagem ilustrativa de painéis solares em telhado residencial' }],
+    photos: [{ src: withBase('/assets/images/solar-rooftop-hero.jpg'), alt: 'Imagem ilustrativa de painéis solares em telhado residencial' }],
   }] : published;
   const hasSimulations = projects.some(project => project.simulated);
   const grid = document.getElementById('project-grid');
