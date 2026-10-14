@@ -1,3 +1,11 @@
 node_modules/
 .DS_Store
 npm-debug.log*
+
+.env
+.env.*
+!.env.example
+dist/
+.astro/
+public/assets/
+studio/.sanity/

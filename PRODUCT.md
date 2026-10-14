@@ -35,13 +35,14 @@ O visitante acessa uma landing page pública para conhecer a empresa, entender o
 - Nome: SolarMais.
 - Categoria principal: placas solares e energia solar.
 - Idioma: português do Brasil.
-- A identidade atual usa o laranja como cor de destaque e admite temas claro e escuro.
+- A logo oficial fornecida usa fundo preto, símbolo de mais em um círculo laranja e wordmark SolarMais em branco; a interface deve preservar essa combinação e admite temas claro e escuro.
 
 ## Evidence on Hand
 
 - O código atual apresenta benefícios, soluções residenciais, comerciais e industriais, etapas do atendimento, perguntas frequentes e formulário de interesse.
 - Os três depoimentos anteriores foram removidos porque sua autenticidade e autorização de uso não estavam confirmadas; trabalhos futuros não devem recriá-los como prova sem confirmação.
 - A imagem do hero é um ativo editorial gerado e está identificada como ilustrativa; ela não representa uma instalação realizada pela SolarMais.
+- A logo oficial está disponível em `assets/images/Logo.jpg` e é a autoridade visual da marca.
 - Não há fotografias de projetos reais, estudos de caso, números comprovados de economia, certificações ou outros ativos de prova confirmados no projeto.
 
 ## Product Principles

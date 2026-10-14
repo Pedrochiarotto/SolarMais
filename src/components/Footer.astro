@@ -1,0 +1,11 @@
+---
+const { content } = Astro.props;
+---
+<footer class="site-footer bg-black text-on-brand-dark">
+    <div class="page-shell flex flex-col justify-between gap-8 py-12 md:flex-row md:items-end"><div><a class="inline-flex min-h-12 items-center" href="/#topo" aria-label="SolarMais — início"><span class="brand-lockup" aria-hidden="true"><img src={content.logo} width="150" height="150" alt="" loading="lazy" /></span></a><p class="mt-3 max-w-md text-sm text-on-brand-dark-muted">{content.footerText}</p></div><nav class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-on-brand-dark-muted" aria-label="Navegação do rodapé"><a class="min-h-11 content-center hover:text-on-brand-dark" href="/#solucoes">Soluções</a><a class="min-h-11 content-center hover:text-on-brand-dark" href="/projetos/">Projetos</a><a class="min-h-11 content-center hover:text-on-brand-dark" href="/#beneficios">Benefícios</a><a class="min-h-11 content-center hover:text-on-brand-dark" href="/#duvidas">Dúvidas</a><a class="min-h-11 content-center hover:text-on-brand-dark" href="/#cadastro">Contato</a>{content.phone && <a href={`tel:${content.phone.replace(/[^+0-9]/g, '')}`}>{content.phone}</a>}
+{content.email && <a href={`mailto:${content.email}`}>{content.email}</a>}
+{content.whatsapp && <a href={`https://wa.me/${content.whatsapp.replace(/\D/g, '')}`}>WhatsApp</a>}
+{content.instagram && <a href={content.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>}
+</nav></div>
+    <div class="page-shell flex flex-col justify-between gap-3 border-t border-white/20 py-6 text-xs text-on-brand-dark-muted sm:flex-row"><p>© <span id="currentYear">2026</span> SolarMais. Todos os direitos reservados.</p><a class="font-semibold underline decoration-white/30 underline-offset-4 hover:text-on-brand-dark" href="/#topo">Voltar ao topo</a></div>
+  </footer>

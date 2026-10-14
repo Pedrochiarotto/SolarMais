@@ -1,0 +1,654 @@
+{
+  "home": [
+    {
+      "name": "hero",
+      "title": "Apresentação principal",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Título 1",
+          "description": "Energia do sol para uma rotina mais previsível.",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Texto 2",
+          "description": "A SolarMais planeja soluções fotovoltaicas para residências e empresas e acompanha o projeto do dime",
+          "type": "text"
+        },
+        {
+          "name": "text3",
+          "title": "Texto do botão 3",
+          "description": "Avaliar meu imóvel",
+          "type": "string"
+        },
+        {
+          "name": "text4",
+          "title": "Texto do botão 4",
+          "description": "Entender as etapas",
+          "type": "string"
+        },
+        {
+          "name": "text5",
+          "title": "Texto 5",
+          "description": "Atendimento em São Paulo e região",
+          "type": "string"
+        },
+        {
+          "name": "text6",
+          "title": "Texto 6",
+          "description": "Projeto dimensionado",
+          "type": "string"
+        },
+        {
+          "name": "text7",
+          "title": "Texto 7",
+          "description": "Para o consumo e o imóvel",
+          "type": "string"
+        },
+        {
+          "name": "text8",
+          "title": "Texto 8",
+          "description": "Etapas acompanhadas",
+          "type": "string"
+        },
+        {
+          "name": "text9",
+          "title": "Texto 9",
+          "description": "Da análise à homologação",
+          "type": "string"
+        },
+        {
+          "name": "text10",
+          "title": "Texto 10",
+          "description": "Atendimento próximo",
+          "type": "string"
+        },
+        {
+          "name": "text11",
+          "title": "Texto 11",
+          "description": "Orientação durante o projeto",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "title": "Sobre a empresa",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Título 1",
+          "description": "Energia solar começa com um projeto que cabe na sua realidade.",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Texto 2",
+          "description": "Antes de falar em equipamentos, é preciso entender consumo, espaço disponível e condições do imóvel.",
+          "type": "text"
+        },
+        {
+          "name": "text3",
+          "title": "Texto do botão 3",
+          "description": "Conversar sobre meu imóvel",
+          "type": "string"
+        },
+        {
+          "name": "text4",
+          "title": "Texto 4",
+          "description": "1. Captação",
+          "type": "string"
+        },
+        {
+          "name": "text5",
+          "title": "Texto 5",
+          "description": "Os módulos recebem a luz solar.",
+          "type": "string"
+        },
+        {
+          "name": "text6",
+          "title": "Texto 6",
+          "description": "2. Conversão",
+          "type": "string"
+        },
+        {
+          "name": "text7",
+          "title": "Texto 7",
+          "description": "O inversor prepara a energia para uso.",
+          "type": "string"
+        },
+        {
+          "name": "text8",
+          "title": "Texto 8",
+          "description": "3. Consumo",
+          "type": "string"
+        },
+        {
+          "name": "text9",
+          "title": "Texto 9",
+          "description": "O imóvel utiliza a energia gerada.",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "solucoes",
+      "title": "Soluções",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Título 1",
+          "description": "Soluções pensadas para diferentes rotinas de consumo.",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Texto 2",
+          "description": "O porte do sistema depende da demanda de energia, da área disponível e das condições técnicas do loc",
+          "type": "text"
+        },
+        {
+          "name": "text3",
+          "title": "Subtítulo 3",
+          "description": "Residencial",
+          "type": "string"
+        },
+        {
+          "name": "text4",
+          "title": "Texto 4",
+          "description": "Para casas que desejam produzir energia no próprio telhado e reduzir a exposição às variações da tar",
+          "type": "string"
+        },
+        {
+          "name": "text5",
+          "title": "Subtítulo 5",
+          "description": "Comercial",
+          "type": "string"
+        },
+        {
+          "name": "text6",
+          "title": "Texto 6",
+          "description": "Para lojas e escritórios que buscam mais previsibilidade sobre uma despesa recorrente da operação.",
+          "type": "string"
+        },
+        {
+          "name": "text7",
+          "title": "Subtítulo 7",
+          "description": "Pequena indústria",
+          "type": "string"
+        },
+        {
+          "name": "text8",
+          "title": "Texto 8",
+          "description": "Para operações com maior demanda e necessidade de aproveitar de forma eficiente a área disponível.",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "projetos",
+      "title": "Chamada do portfólio",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Título 1",
+          "description": "Cada projeto tem uma história.",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Texto 2",
+          "description": "Explore o portfólio da SolarMais e veja os detalhes de cada instalação.",
+          "type": "string"
+        },
+        {
+          "name": "text3",
+          "title": "Texto do botão 3",
+          "description": "Explorar portfólio",
+          "type": "string"
+        },
+        {
+          "name": "text4",
+          "title": "Texto 4",
+          "description": "Imagem ilustrativa",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "beneficios",
+      "title": "Benefícios",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Título 1",
+          "description": "O que muda quando o imóvel gera parte da própria energia.",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Texto 2",
+          "description": "A energia solar combina planejamento técnico, geração renovável e acompanhamento do desempenho do si",
+          "type": "string"
+        },
+        {
+          "name": "text3",
+          "title": "Subtítulo 3",
+          "description": "Mais previsibilidade",
+          "type": "string"
+        },
+        {
+          "name": "text4",
+          "title": "Texto 4",
+          "description": "Produzir energia no imóvel reduz a dependência das variações tarifárias, conforme o desempenho e a c",
+          "type": "text"
+        },
+        {
+          "name": "text5",
+          "title": "Subtítulo 5",
+          "description": "Infraestrutura mais preparada",
+          "type": "string"
+        },
+        {
+          "name": "text6",
+          "title": "Texto 6",
+          "description": "A geração própria incorpora tecnologia ao imóvel e organiza o consumo de energia para o longo prazo.",
+          "type": "string"
+        },
+        {
+          "name": "text7",
+          "title": "Subtítulo 7",
+          "description": "Fonte renovável",
+          "type": "string"
+        },
+        {
+          "name": "text8",
+          "title": "Texto 8",
+          "description": "Os módulos aproveitam a luz do sol para gerar eletricidade durante o dia, sem emissão direta na oper",
+          "type": "string"
+        },
+        {
+          "name": "text9",
+          "title": "Subtítulo 9",
+          "description": "Decisão técnica",
+          "type": "string"
+        },
+        {
+          "name": "text10",
+          "title": "Texto 10",
+          "description": "Estrutura, consumo, proteções e regras da distribuidora entram na análise antes da definição do sist",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "como_funciona",
+      "title": "Etapas",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Título 1",
+          "description": "Um caminho claro até começar a gerar.",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Texto 2",
+          "description": "Você acompanha as decisões enquanto a SolarMais organiza as etapas técnicas e a documentação do proj",
+          "type": "string"
+        },
+        {
+          "name": "text3",
+          "title": "Texto 3",
+          "description": "01",
+          "type": "string"
+        },
+        {
+          "name": "text4",
+          "title": "Subtítulo 4",
+          "description": "Entendimento",
+          "type": "string"
+        },
+        {
+          "name": "text5",
+          "title": "Texto 5",
+          "description": "Reunimos localização, conta de luz e características do imóvel.",
+          "type": "string"
+        },
+        {
+          "name": "text6",
+          "title": "Texto 6",
+          "description": "02",
+          "type": "string"
+        },
+        {
+          "name": "text7",
+          "title": "Subtítulo 7",
+          "description": "Dimensionamento",
+          "type": "string"
+        },
+        {
+          "name": "text8",
+          "title": "Texto 8",
+          "description": "A solução é planejada conforme demanda, espaço e condições do local.",
+          "type": "string"
+        },
+        {
+          "name": "text9",
+          "title": "Texto 9",
+          "description": "03",
+          "type": "string"
+        },
+        {
+          "name": "text10",
+          "title": "Subtítulo 10",
+          "description": "Instalação",
+          "type": "string"
+        },
+        {
+          "name": "text11",
+          "title": "Texto 11",
+          "description": "Os equipamentos são instalados conforme o projeto definido.",
+          "type": "string"
+        },
+        {
+          "name": "text12",
+          "title": "Texto 12",
+          "description": "04",
+          "type": "string"
+        },
+        {
+          "name": "text13",
+          "title": "Subtítulo 13",
+          "description": "Homologação",
+          "type": "string"
+        },
+        {
+          "name": "text14",
+          "title": "Texto 14",
+          "description": "O processo com a distribuidora prepara o sistema para operar conectado à rede.",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "decision",
+      "title": "Chamada para avaliação",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Título 1",
+          "description": "Seu imóvel pode ter potencial para gerar a própria energia.",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Texto 2",
+          "description": "Conte onde ele está e qual é a faixa da conta de luz. Esses dados ajudam a iniciar a avaliação.",
+          "type": "string"
+        },
+        {
+          "name": "text3",
+          "title": "Texto do botão 3",
+          "description": "Começar avaliação",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "duvidas",
+      "title": "Dúvidas frequentes",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Título 1",
+          "description": "Informação para decidir com mais segurança.",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Texto 2",
+          "description": "Se a sua dúvida não estiver aqui, conte um pouco sobre o imóvel no formulário.",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "cadastro",
+      "title": "Contato e formulário",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Título 1",
+          "description": "Vamos entender o seu projeto.",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Texto 2",
+          "description": "Envie os dados básicos do imóvel. Um especialista poderá compreender sua necessidade e orientar o pr",
+          "type": "text"
+        },
+        {
+          "name": "text3",
+          "title": "Texto 3",
+          "description": "Avaliação inicial do consumo",
+          "type": "string"
+        },
+        {
+          "name": "text4",
+          "title": "Texto 4",
+          "description": "Atendimento em São Paulo e região",
+          "type": "string"
+        },
+        {
+          "name": "text5",
+          "title": "Texto 5",
+          "description": "Projeto residencial ou empresarial",
+          "type": "string"
+        },
+        {
+          "name": "text6",
+          "title": "Subtítulo 6",
+          "description": "Conte sobre o imóvel",
+          "type": "string"
+        },
+        {
+          "name": "text7",
+          "title": "Texto 7",
+          "description": "Todos os campos são obrigatórios.",
+          "type": "string"
+        },
+        {
+          "name": "text8",
+          "title": "Rótulo 8",
+          "description": "Nome completo",
+          "type": "string"
+        },
+        {
+          "name": "text9",
+          "title": "Rótulo 9",
+          "description": "E-mail",
+          "type": "string"
+        },
+        {
+          "name": "text10",
+          "title": "Rótulo 10",
+          "description": "Telefone com DDD",
+          "type": "string"
+        },
+        {
+          "name": "text11",
+          "title": "Rótulo 11",
+          "description": "Cidade",
+          "type": "string"
+        },
+        {
+          "name": "text12",
+          "title": "Rótulo 12",
+          "description": "Valor médio da conta de luz",
+          "type": "string"
+        },
+        {
+          "name": "text13",
+          "title": "Opção 13",
+          "description": "Selecione uma faixa",
+          "type": "string"
+        },
+        {
+          "name": "text14",
+          "title": "Opção 14",
+          "description": "Até R$ 150",
+          "type": "string"
+        },
+        {
+          "name": "text15",
+          "title": "Opção 15",
+          "description": "R$ 151 – R$ 300",
+          "type": "string"
+        },
+        {
+          "name": "text16",
+          "title": "Opção 16",
+          "description": "R$ 301 – R$ 500",
+          "type": "string"
+        },
+        {
+          "name": "text17",
+          "title": "Opção 17",
+          "description": "R$ 501 – R$ 800",
+          "type": "string"
+        },
+        {
+          "name": "text18",
+          "title": "Opção 18",
+          "description": "Acima de R$ 800",
+          "type": "string"
+        },
+        {
+          "name": "text19",
+          "title": "Texto 19",
+          "description": "Solicitar avaliação",
+          "type": "string"
+        },
+        {
+          "name": "text20",
+          "title": "Texto 20",
+          "description": "Ao enviar, você concorda em ser contatado pela SolarMais sobre esta solicitação.",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "portfolio",
+      "title": "Introdução da galeria",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Texto do botão 1",
+          "description": "Voltar ao início",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Título 2",
+          "description": "Galeria de projetos",
+          "type": "string"
+        },
+        {
+          "name": "text3",
+          "title": "Texto 3",
+          "description": "Explore as instalações pelas imagens. Selecione um projeto para ver todas as fotos e os detalhes.",
+          "type": "string"
+        },
+        {
+          "name": "text4",
+          "title": "Texto 4",
+          "description": "Prévia do portfólio · O exemplo abaixo utiliza uma imagem ilustrativa e não representa uma obra real",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "page_shell",
+      "title": "Galeria e chamada para contato",
+      "fields": [
+        {
+          "name": "text1",
+          "title": "Texto 1",
+          "description": "Todos",
+          "type": "string"
+        },
+        {
+          "name": "text2",
+          "title": "Texto 2",
+          "description": "Residencial",
+          "type": "string"
+        },
+        {
+          "name": "text3",
+          "title": "Texto 3",
+          "description": "Comercial",
+          "type": "string"
+        },
+        {
+          "name": "text4",
+          "title": "Texto 4",
+          "description": "Industrial",
+          "type": "string"
+        },
+        {
+          "name": "text5",
+          "title": "Rótulo 5",
+          "description": "Buscar projeto ou cidade",
+          "type": "string"
+        },
+        {
+          "name": "text6",
+          "title": "Título 6",
+          "description": "Nenhum projeto encontrado.",
+          "type": "string"
+        },
+        {
+          "name": "text7",
+          "title": "Texto 7",
+          "description": "Experimente outra categoria ou busque por outro nome.",
+          "type": "string"
+        },
+        {
+          "name": "text8",
+          "title": "Texto 8",
+          "description": "Limpar filtros",
+          "type": "string"
+        },
+        {
+          "name": "text9",
+          "title": "Texto do botão 9",
+          "description": "Voltar à galeria",
+          "type": "string"
+        },
+        {
+          "name": "text10",
+          "title": "Título 10",
+          "description": "O próximo projeto pode ser o seu.",
+          "type": "string"
+        },
+        {
+          "name": "text11",
+          "title": "Texto 11",
+          "description": "Vamos conversar sobre o potencial do seu imóvel.",
+          "type": "string"
+        },
+        {
+          "name": "text12",
+          "title": "Texto do botão 12",
+          "description": "Solicitar avaliação",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

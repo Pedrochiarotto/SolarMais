@@ -4,149 +4,157 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#f7faf7" />
+  <meta name="theme-color" content="#000000" />
   <title>SolarMais — Energia solar em São Paulo</title>
-  <meta name="description" content="Conheça as soluções em energia solar da SolarMais para residências e empresas em São Paulo. Solicite uma avaliação gratuita." />
+  <meta name="description" content="Soluções de energia solar para residências e empresas em São Paulo. Entenda as etapas e solicite uma avaliação para o seu imóvel." />
   <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="assets/images/solar-rooftop-hero.jpg" as="image" type="image/jpeg" fetchpriority="high" />
+  <link rel="icon" href="assets/images/Logo.jpg" type="image/jpeg" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/main.js" defer></script>
 </head>
-<!-- impeccable-disable cramped-padding -- nested shells and bordered rows retain at least 20px of computed inset -->
 <body id="topo" class="bg-canvas text-ink antialiased">
-  <a class="fixed top-3 left-3 z-[100] -translate-y-24 rounded-lg bg-ink px-4 py-3 font-bold text-canvas transition focus:translate-y-0" href="#conteudo">Pular para o conteúdo</a>
+  <a class="fixed top-3 left-3 z-[100] -translate-y-24 rounded-lg bg-brand px-4 py-3 font-bold text-brand-ink transition focus:translate-y-0" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="sticky top-0 z-50 border-b border-line bg-[var(--header)] backdrop-blur-md">
+  <header class="site-header sticky top-0 z-50 border-b border-white/20 bg-black">
     <div class="page-shell flex min-h-20 flex-wrap items-center justify-between gap-3 py-3">
-      <a class="inline-flex min-h-11 items-center gap-2.5 text-xl font-extrabold tracking-[-0.03em]" href="#topo" aria-label="SolarMais — início">
-        <svg class="size-8 text-brand" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6" fill="currentColor" /><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path d="M16 2v5M16 25v5M2 16h5M25 16h5M6.1 6.1l3.6 3.6M22.3 22.3l3.6 3.6M25.9 6.1l-3.6 3.6M9.7 22.3l-3.6 3.6" /></g></svg>
-        <span>Solar<span class="text-brand-strong">Mais</span></span>
+      <a class="inline-flex min-h-12 items-center" href="#topo" aria-label="SolarMais — início">
+        <span class="brand-lockup" aria-hidden="true"><img src="assets/images/Logo.jpg" width="150" height="150" alt="" /></span>
       </a>
-
-      <nav class="nav-panel order-3 flex w-full flex-col border-t border-line pt-3 md:order-none md:w-auto md:flex-row md:items-center md:gap-6 md:border-0 md:pt-0" id="primaryNav" aria-label="Navegação principal">
-        <a class="nav-link" href="#beneficios">Benefícios</a>
+      <nav class="nav-panel order-3 flex w-full flex-col border-t border-white/20 pt-3 lg:order-none lg:w-auto lg:flex-row lg:items-center lg:gap-6 lg:border-0 lg:pt-0" id="primaryNav" aria-label="Navegação principal">
         <a class="nav-link" href="#solucoes">Soluções</a>
+        <a class="nav-link" href="projetos.html">Projetos</a>
+        <a class="nav-link" href="#beneficios">Benefícios</a>
         <a class="nav-link" href="#como-funciona">Como funciona</a>
         <a class="nav-link" href="#duvidas">Dúvidas</a>
-        <a class="nav-link text-brand-strong md:hidden" href="#cadastro">Solicitar avaliação</a>
+        <a class="nav-link text-brand lg:hidden" href="#cadastro">Solicitar avaliação</a>
       </nav>
-
       <div class="flex items-center gap-2">
         <button class="icon-button" id="themeToggle" type="button" aria-label="Ativar tema escuro" hidden>
           <svg class="theme-icon-moon size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z" /></svg>
-          <svg class="theme-icon-sun size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
+          <svg class="theme-icon-sun size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
         </button>
-        <a class="button button-primary hidden md:inline-flex" href="#cadastro">Solicitar avaliação</a>
-        <button class="icon-button md:hidden" id="menuToggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Abrir menu" hidden>
-          <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
-        </button>
+        <a class="button button-primary hidden lg:inline-flex" href="#cadastro">Solicitar avaliação</a>
+        <button class="icon-button lg:hidden" id="menuToggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Abrir menu" hidden><svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>
       </div>
     </div>
   </header>
 
   <main id="conteudo" tabindex="-1">
-    <section class="overflow-hidden pt-12 pb-16 sm:pt-16 md:pt-20 md:pb-20" aria-labelledby="hero-title">
-      <div class="page-shell grid items-center gap-10 lg:grid-cols-[.9fr_1.1fr] lg:gap-16">
-        <div class="max-w-2xl">
-          <h1 id="hero-title" class="max-w-[13ch] text-[clamp(2.7rem,6vw,5.25rem)] leading-[1.02] font-extrabold tracking-[-0.04em] text-ink text-balance">Seu telhado pode trabalhar a seu favor.</h1>
-          <p class="mt-6 max-w-[58ch] text-lg leading-8 text-ink-muted">A SolarMais planeja sua solução de energia solar e acompanha cada etapa, do dimensionamento à homologação do sistema.</p>
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a class="button button-primary" href="#cadastro">Quero avaliar meu imóvel <svg class="size-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a>
-            <a class="button button-secondary" href="#como-funciona">Ver como funciona</a>
+    <section class="hero-stage" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"><img src="assets/images/solar-rooftop-hero.jpg" width="1536" height="1024" alt="" fetchpriority="high" decoding="async" /></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="page-shell hero-content">
+        <div class="max-w-[760px] py-20 sm:py-24 lg:py-32">
+          <h1 id="hero-title" class="max-w-[12ch] text-[clamp(2.8rem,7vw,5.8rem)] leading-[.98] font-extrabold tracking-[-0.04em] text-white text-balance">Energia do sol para uma rotina mais previsível.</h1>
+          <p class="mt-7 max-w-[58ch] text-lg leading-8 text-white/80 sm:text-xl">A SolarMais planeja soluções fotovoltaicas para residências e empresas e acompanha o projeto do dimensionamento à homologação.</p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a class="button button-primary" href="#cadastro">Avaliar meu imóvel <svg class="size-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a>
+            <a class="button button-on-dark" href="#como-funciona">Entender as etapas</a>
           </div>
-          <p class="mt-4 flex items-center gap-2 text-sm text-ink-muted"><svg class="size-4 shrink-0 text-brand-strong" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path d="m8.5 12 2.2 2.2 4.8-5" /></svg>Avaliação gratuita · Atendimento em São Paulo e região</p>
+          <p class="mt-5 flex items-center gap-2 text-sm font-semibold text-white/75"><svg class="size-4 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path d="m8.5 12 2.2 2.2 4.8-5" /></svg>Atendimento em São Paulo e região</p>
         </div>
-
-        <figure class="hero-image relative overflow-hidden rounded-2xl bg-surface-raised shadow-soft">
-          <img class="aspect-[3/2] h-full w-full object-cover" src="assets/images/solar-rooftop-hero.jpg" width="1536" height="1024" alt="Painéis solares sobre telhado de cerâmica em um bairro arborizado" fetchpriority="high" decoding="async" />
-          <figcaption class="absolute right-3 bottom-3 rounded-md bg-[#10241ed9] px-3 py-2 text-xs font-semibold text-white">Imagem ilustrativa</figcaption>
-        </figure>
       </div>
-
-      <div class="page-shell mt-12 grid border-y border-line sm:grid-cols-3 lg:mt-16">
-        <div class="flex gap-4 border-b border-line py-5 sm:border-r sm:border-b-0 sm:pr-6"><svg class="mt-0.5 size-6 shrink-0 text-brand-strong" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" aria-hidden="true"><path d="M4 20h16M6 17l2-7h8l2 7H6ZM10 10V7h4v3M12 3v2M4.9 5.9l1.4 1.4M19.1 5.9l-1.4 1.4" /></svg><div><strong class="block text-sm">Projeto dimensionado</strong><span class="text-sm text-ink-muted">Para o consumo e o imóvel</span></div></div>
-        <div class="flex gap-4 border-b border-line py-5 sm:border-r sm:border-b-0 sm:px-6"><svg class="mt-0.5 size-6 shrink-0 text-brand-strong" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" aria-hidden="true"><path d="M7 3h10v4H7zM5 5H3v16h18V5h-2M8 12h8M8 16h5" /></svg><div><strong class="block text-sm">Processo acompanhado</strong><span class="text-sm text-ink-muted">Da análise à homologação</span></div></div>
-        <div class="flex gap-4 py-5 sm:pl-6"><svg class="mt-0.5 size-6 shrink-0 text-brand-strong" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" aria-hidden="true"><path d="M4 13a8 8 0 0 1 16 0M4 13v5h3v-5H4ZM17 13v5h3v-5h-3ZM17 18c0 2-2 3-5 3" /></svg><div><strong class="block text-sm">Atendimento próximo</strong><span class="text-sm text-ink-muted">Suporte para tirar suas dúvidas</span></div></div>
+      <div class="hero-facts">
+        <div class="page-shell grid md:grid-cols-3">
+          <div class="fact-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 17l2-7h8l2 7H6ZM10 10V7h4v3M12 3v2" /></svg><div><strong>Projeto dimensionado</strong><span>Para o consumo e o imóvel</span></div></div>
+          <div class="fact-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v4H7zM5 5H3v16h18V5h-2M8 12h8M8 16h5" /></svg><div><strong>Etapas acompanhadas</strong><span>Da análise à homologação</span></div></div>
+          <div class="fact-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13a8 8 0 0 1 16 0M4 13v5h3v-5H4ZM17 13v5h3v-5h-3ZM17 18c0 2-2 3-5 3" /></svg><div><strong>Atendimento próximo</strong><span>Orientação durante o projeto</span></div></div>
+        </div>
       </div>
+    </section>
+
+    <section class="section-space overflow-hidden" aria-labelledby="about-title">
+      <div class="page-shell grid items-center gap-14 lg:grid-cols-[.82fr_1.18fr] lg:gap-24">
+        <div>
+          <h2 id="about-title" class="section-heading">Energia solar começa com um projeto que cabe na sua realidade.</h2>
+          <p class="section-copy mt-6">Antes de falar em equipamentos, é preciso entender consumo, espaço disponível e condições do imóvel. A SolarMais reúne essas informações para orientar uma solução coerente com cada cenário.</p>
+          <a class="text-link mt-8" href="#cadastro">Conversar sobre meu imóvel <svg class="size-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a>
+        </div>
+        <div class="energy-flow" aria-label="Fluxo simplificado de um sistema de energia solar">
+          <svg class="energy-flow-art" viewBox="0 0 720 360" role="img" aria-labelledby="flow-title flow-desc">
+            <title id="flow-title">Da luz solar ao uso de energia no imóvel</title>
+            <desc id="flow-desc">O sol ilumina os painéis no telhado. A energia passa pelo inversor e alimenta o imóvel, conectado à rede elétrica.</desc>
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <circle class="flow-accent" cx="88" cy="78" r="28" /><path class="flow-accent" d="M88 25v20M88 111v20M35 78h20M121 78h20M50 40l14 14M112 102l14 14M126 40l-14 14M64 102l-14 14" />
+              <path d="M190 218 360 112l170 106M225 197v105h270V197" /><path class="flow-accent" d="m274 174 116-42 46 42-116 43-46-43Z" /><path class="flow-accent" d="m303 163 46 43M343 148l46 43M386 137l42 39M305 186l116-42" />
+              <rect x="385" y="224" width="48" height="64" rx="4" /><path d="M399 245h20M409 235v20M530 260h54M584 224v72M584 238h52M636 214v96" /><path class="flow-signal" d="M140 92c60 8 78 32 104 76M366 217c5 16 22 22 38 18M433 257h-14M584 260h-46" />
+            </g>
+          </svg>
+          <ol class="energy-flow-labels">
+            <li><strong>1. Captação</strong><span>Os módulos recebem a luz solar.</span></li><li><strong>2. Conversão</strong><span>O inversor prepara a energia para uso.</span></li><li><strong>3. Consumo</strong><span>O imóvel utiliza a energia gerada.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucoes" class="section-space bg-brand-dark text-on-brand-dark" aria-labelledby="solutions-title">
+      <div class="page-shell">
+        <div class="grid gap-7 lg:grid-cols-[.75fr_1.25fr] lg:items-end lg:gap-20">
+          <h2 id="solutions-title" class="max-w-[14ch] text-4xl leading-[1.06] font-extrabold tracking-[-0.03em] text-on-brand-dark sm:text-5xl">Soluções pensadas para diferentes rotinas de consumo.</h2>
+          <p class="max-w-[62ch] text-base leading-7 text-on-brand-dark-muted lg:justify-self-end">O porte do sistema depende da demanda de energia, da área disponível e das condições técnicas do local. A avaliação inicial ajuda a definir o caminho.</p>
+        </div>
+        <div class="solution-list mt-14 grid md:grid-cols-3">
+          <article class="solution-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10M9 20v-6h6v6" /></svg><div><h3>Residencial</h3><p>Para casas que desejam produzir energia no próprio telhado e reduzir a exposição às variações da tarifa.</p></div></article>
+          <article class="solution-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V6h11v15M15 10h5v11M8 10h3M8 14h3M8 18h3" /></svg><div><h3>Comercial</h3><p>Para lojas e escritórios que buscam mais previsibilidade sobre uma despesa recorrente da operação.</p></div></article>
+          <article class="solution-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l6 3V9l6 4V6h6v15H3ZM7 17h2M13 17h2M18 10h3" /></svg><div><h3>Pequena indústria</h3><p>Para operações com maior demanda e necessidade de aproveitar de forma eficiente a área disponível.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section-space" aria-labelledby="projects-title">
+      <div class="page-shell portfolio-teaser"><div><h2 id="projects-title" class="section-heading">Cada projeto tem uma história.</h2><p class="section-copy mt-6">Explore o portfólio da SolarMais e veja os detalhes de cada instalação.</p><a class="button button-primary mt-8" href="projetos.html">Explorar portfólio</a></div><figure><img src="assets/images/solar-rooftop-hero.jpg" width="1536" height="1024" alt="Ilustração de painéis solares sobre um telhado" loading="lazy"><figcaption>Imagem ilustrativa</figcaption></figure></div>
     </section>
 
     <section id="beneficios" class="section-space bg-surface-raised" aria-labelledby="benefits-title">
-      <div class="page-shell grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:gap-20">
-        <div><h2 id="benefits-title" class="section-heading">Energia solar muda a relação com a sua conta de luz.</h2><p class="section-copy mt-6">Um sistema bem dimensionado transforma luz solar em energia para o imóvel e ajuda a trazer mais previsibilidade ao orçamento.</p></div>
-        <div class="grid sm:grid-cols-2 sm:gap-x-10">
-          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M4 19h16M7 16l4-4 3 2 4-6" /><path d="M14 8h4v4" /></svg></span><div><h3 class="text-lg font-bold">Menos exposição a aumentos</h3><p class="mt-2 text-sm leading-6 text-ink-muted">Produzir parte da própria energia reduz a dependência das variações tarifárias.</p></div></article>
-          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10M9 20v-6h6v6" /></svg></span><div><h3 class="text-lg font-bold">Um imóvel mais preparado</h3><p class="mt-2 text-sm leading-6 text-ink-muted">A geração própria agrega tecnologia e eficiência à residência ou empresa.</p></div></article>
-          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="M20 4C9 3 3 8 5 15c6 5 15-1 15-11Z" /><path d="M4 21 15 10" /></svg></span><div><h3 class="text-lg font-bold">Fonte renovável</h3><p class="mt-2 text-sm leading-6 text-ink-muted">A energia solar aproveita um recurso abundante e diminui o impacto ambiental.</p></div></article>
-          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" /><path d="m8 12 3 3 5-6" /></svg></span><div><h3 class="text-lg font-bold">Projeto com segurança</h3><p class="mt-2 text-sm leading-6 text-ink-muted">Cada solução considera estrutura, consumo, proteções e regras da distribuidora.</p></div></article>
+      <div class="page-shell grid gap-12 lg:grid-cols-[.72fr_1.28fr] lg:gap-24">
+        <div class="lg:sticky lg:top-28 lg:self-start"><h2 id="benefits-title" class="section-heading">O que muda quando o imóvel gera parte da própria energia.</h2><p class="section-copy mt-6">A energia solar combina planejamento técnico, geração renovável e acompanhamento do desempenho do sistema.</p></div>
+        <div>
+          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19h16M7 16l4-4 3 2 4-6" /><path d="M14 8h4v4" /></svg></span><div><h3>Mais previsibilidade</h3><p>Produzir energia no imóvel reduz a dependência das variações tarifárias, conforme o desempenho e a compensação do sistema.</p></div></article>
+          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10M9 20v-6h6v6" /></svg></span><div><h3>Infraestrutura mais preparada</h3><p>A geração própria incorpora tecnologia ao imóvel e organiza o consumo de energia para o longo prazo.</p></div></article>
+          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 4C9 3 3 8 5 15c6 5 15-1 15-11Z" /><path d="M4 21 15 10" /></svg></span><div><h3>Fonte renovável</h3><p>Os módulos aproveitam a luz do sol para gerar eletricidade durante o dia, sem emissão direta na operação.</p></div></article>
+          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" /><path d="m8 12 3 3 5-6" /></svg></span><div><h3>Decisão técnica</h3><p>Estrutura, consumo, proteções e regras da distribuidora entram na análise antes da definição do sistema.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section id="solucoes" class="section-space" aria-labelledby="solutions-title">
+    <section id="como-funciona" class="section-space" aria-labelledby="process-title">
       <div class="page-shell">
-        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-          <div><h2 id="solutions-title" class="section-heading">Uma solução para cada tipo de consumo.</h2><p class="section-copy mt-5">A avaliação técnica define o tamanho e a configuração adequados para cada cenário.</p></div>
-          <a class="inline-flex min-h-11 items-center gap-2 font-bold text-brand-strong underline decoration-brand/30 underline-offset-8 hover:decoration-brand" href="#cadastro">Conversar sobre meu projeto</a>
-        </div>
-        <div class="mt-12 grid overflow-hidden rounded-2xl bg-evergreen text-on-evergreen md:grid-cols-3">
-          <article class="p-7 md:p-9"><svg class="size-9 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10M9 20v-6h6v6" /></svg><h3 class="mt-12 text-2xl font-bold">Residencial</h3><p class="mt-3 text-sm leading-6 text-[#d8e2de]">Para casas que buscam reduzir despesas mensais e produzir energia no próprio telhado.</p></article>
-          <article class="border-y border-white/20 p-7 md:border-x md:border-y-0 md:p-9"><svg class="size-9 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true"><path d="M4 21V6h11v15M15 10h5v11M8 10h3M8 14h3M8 18h3" /></svg><h3 class="mt-12 text-2xl font-bold">Comercial</h3><p class="mt-3 text-sm leading-6 text-[#d8e2de]">Para lojas e escritórios que precisam de mais previsibilidade nos custos operacionais.</p></article>
-          <article class="p-7 md:p-9"><svg class="size-9 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true"><path d="M3 21V10l6 3V9l6 4V6h6v15H3ZM7 17h2M13 17h2M18 10h3" /></svg><h3 class="mt-12 text-2xl font-bold">Pequena indústria</h3><p class="mt-3 text-sm leading-6 text-[#d8e2de]">Para operações com maior demanda e necessidade de aproveitar bem a área disponível.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="como-funciona" class="section-space border-y border-line bg-surface" aria-labelledby="process-title">
-      <div class="page-shell grid gap-8 lg:grid-cols-[.75fr_1.25fr] lg:gap-20">
-        <div><h2 id="process-title" class="section-heading">Do primeiro contato à geração de energia.</h2><p class="section-copy mt-6">Você acompanha as decisões. A SolarMais organiza as etapas técnicas do projeto.</p></div>
-        <ol class="grid gap-x-10 sm:grid-cols-2">
-          <li class="border-t border-line py-6"><span class="text-sm font-bold text-brand-strong">01</span><h3 class="mt-4 text-xl font-bold">Entendemos seu consumo</h3><p class="mt-2 text-sm leading-6 text-ink-muted">Localização, conta de luz e características do imóvel orientam a avaliação inicial.</p></li>
-          <li class="border-t border-line py-6"><span class="text-sm font-bold text-brand-strong">02</span><h3 class="mt-4 text-xl font-bold">Dimensionamos o sistema</h3><p class="mt-2 text-sm leading-6 text-ink-muted">A solução é planejada conforme a demanda e as condições encontradas no local.</p></li>
-          <li class="border-t border-line py-6"><span class="text-sm font-bold text-brand-strong">03</span><h3 class="mt-4 text-xl font-bold">Instalamos e homologamos</h3><p class="mt-2 text-sm leading-6 text-ink-muted">A equipe executa a instalação e conduz o processo com a distribuidora.</p></li>
-          <li class="border-t border-line py-6"><span class="text-sm font-bold text-brand-strong">04</span><h3 class="mt-4 text-xl font-bold">Você acompanha a geração</h3><p class="mt-2 text-sm leading-6 text-ink-muted">Depois da liberação, o sistema começa a gerar e você conta com nosso suporte.</p></li>
+        <div class="grid gap-7 lg:grid-cols-[.78fr_1.22fr] lg:items-end lg:gap-20"><h2 id="process-title" class="section-heading">Um caminho claro até começar a gerar.</h2><p class="section-copy lg:justify-self-end">Você acompanha as decisões enquanto a SolarMais organiza as etapas técnicas e a documentação do projeto.</p></div>
+        <ol class="process-list mt-14 grid md:grid-cols-2 lg:grid-cols-4">
+          <li><span>01</span><h3>Entendimento</h3><p>Reunimos localização, conta de luz e características do imóvel.</p></li><li><span>02</span><h3>Dimensionamento</h3><p>A solução é planejada conforme demanda, espaço e condições do local.</p></li><li><span>03</span><h3>Instalação</h3><p>Os equipamentos são instalados conforme o projeto definido.</p></li><li><span>04</span><h3>Homologação</h3><p>O processo com a distribuidora prepara o sistema para operar conectado à rede.</p></li>
         </ol>
       </div>
     </section>
 
+    <section class="decision-band" aria-labelledby="decision-title"><div class="page-shell grid items-center gap-8 py-12 md:grid-cols-[1fr_auto] md:py-16"><div><h2 id="decision-title" class="max-w-[25ch] text-3xl leading-tight font-extrabold tracking-[-0.03em] text-brand-ink sm:text-4xl">Seu imóvel pode ter potencial para gerar a própria energia.</h2><p class="mt-3 max-w-[62ch] text-sm leading-6 text-brand-ink/75 sm:text-base">Conte onde ele está e qual é a faixa da conta de luz. Esses dados ajudam a iniciar a avaliação.</p></div><a class="button button-dark" href="#cadastro">Começar avaliação <svg class="size-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a></div></section>
+
     <section id="duvidas" class="section-space" aria-labelledby="faq-title">
-      <div class="page-shell grid gap-10 lg:grid-cols-[.7fr_1.3fr] lg:gap-20">
-        <div><h2 id="faq-title" class="section-heading">Respostas para decidir com mais segurança.</h2><p class="section-copy mt-6">Se a sua dúvida não estiver aqui, conte um pouco sobre o imóvel no formulário.</p></div>
+      <div class="page-shell grid gap-10 lg:grid-cols-[.7fr_1.3fr] lg:gap-24">
+        <div><h2 id="faq-title" class="section-heading">Informação para decidir com mais segurança.</h2><p class="section-copy mt-6">Se a sua dúvida não estiver aqui, conte um pouco sobre o imóvel no formulário.</p></div>
         <div>
-          <details class="faq-item"><summary class="faq-summary">Como é feita a avaliação inicial?</summary><p class="max-w-[68ch] pb-6 pr-8 text-sm leading-6 text-ink-muted">Começamos pela localização e pela conta de luz. A análise considera consumo, características do imóvel e espaço disponível.</p></details>
-          <details class="faq-item"><summary class="faq-summary">Posso instalar em casa ou na empresa?</summary><p class="max-w-[68ch] pb-6 pr-8 text-sm leading-6 text-ink-muted">Sim. Atendemos projetos residenciais, comerciais e para pequenas indústrias, sempre sujeitos à avaliação técnica.</p></details>
-          <details class="faq-item"><summary class="faq-summary">O que está incluído no projeto?</summary><p class="max-w-[68ch] pb-6 pr-8 text-sm leading-6 text-ink-muted">A proposta detalha dimensionamento, equipamentos, instalação, homologação, garantias e serviços contratados.</p></details>
-          <details class="faq-item"><summary class="faq-summary">Quanto tempo leva para instalar?</summary><p class="max-w-[68ch] pb-6 pr-8 text-sm leading-6 text-ink-muted">O prazo varia conforme porte, condições do imóvel e etapas da distribuidora. O cronograma é apresentado após a avaliação.</p></details>
-          <details class="faq-item"><summary class="faq-summary">A avaliação tem algum custo?</summary><p class="max-w-[68ch] pb-6 pr-8 text-sm leading-6 text-ink-muted">A avaliação inicial é gratuita e sem compromisso. Ela ajuda a entender a solução antes de avançar.</p></details>
+          <details class="faq-item"><summary class="faq-summary">Como é feita a avaliação inicial?</summary><p>Começamos pela localização e pela conta de luz. A análise considera consumo, características do imóvel e espaço disponível.</p></details>
+          <details class="faq-item"><summary class="faq-summary">Posso instalar em casa ou na empresa?</summary><p>Sim. Atendemos projetos residenciais, comerciais e para pequenas indústrias, sempre sujeitos à avaliação técnica.</p></details>
+          <details class="faq-item"><summary class="faq-summary">O que está incluído no projeto?</summary><p>A proposta deve detalhar dimensionamento, equipamentos, instalação, homologação, garantias aplicáveis e serviços contratados.</p></details>
+          <details class="faq-item"><summary class="faq-summary">Quanto tempo leva para instalar?</summary><p>O prazo varia conforme porte, condições do imóvel e etapas da distribuidora. O cronograma é apresentado depois da avaliação.</p></details>
+          <details class="faq-item"><summary class="faq-summary">O que preciso informar primeiro?</summary><p>Cidade, faixa de valor da conta de luz e dados de contato ajudam a iniciar a conversa. Outras informações podem ser solicitadas conforme o imóvel.</p></details>
         </div>
       </div>
     </section>
 
-    <section id="cadastro" class="section-space bg-evergreen text-on-evergreen" aria-labelledby="contact-title">
-      <div class="page-shell grid items-start gap-12 lg:grid-cols-[.85fr_1.15fr] lg:gap-20">
-        <div class="lg:sticky lg:top-28">
-          <h2 id="contact-title" class="max-w-[14ch] text-4xl leading-[1.08] font-extrabold tracking-[-0.03em] text-on-evergreen sm:text-5xl">Vamos avaliar se a energia solar faz sentido para você.</h2>
-          <p class="mt-6 max-w-[48ch] text-base leading-7 text-on-evergreen-muted">Envie os dados básicos do imóvel. Um especialista poderá entender sua necessidade e orientar o próximo passo.</p>
-          <ul class="mt-8 space-y-4 text-sm text-on-evergreen-muted">
-            <li class="flex gap-3"><svg class="mt-0.5 size-5 shrink-0 text-brand" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Avaliação inicial gratuita</li>
-            <li class="flex gap-3"><svg class="mt-0.5 size-5 shrink-0 text-brand" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Atendimento para São Paulo e região</li>
-            <li class="flex gap-3"><svg class="mt-0.5 size-5 shrink-0 text-brand" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Projeto residencial ou empresarial</li>
-          </ul>
-        </div>
-
+    <section id="cadastro" class="section-space bg-brand-dark text-on-brand-dark" aria-labelledby="contact-title">
+      <div class="page-shell grid items-start gap-12 lg:grid-cols-[.82fr_1.18fr] lg:gap-24">
+        <div class="lg:sticky lg:top-28"><h2 id="contact-title" class="max-w-[13ch] text-4xl leading-[1.06] font-extrabold tracking-[-0.03em] text-on-brand-dark sm:text-5xl">Vamos entender o seu projeto.</h2><p class="mt-6 max-w-[48ch] text-base leading-7 text-on-brand-dark-muted">Envie os dados básicos do imóvel. Um especialista poderá compreender sua necessidade e orientar o próximo passo.</p><ul class="contact-points mt-9"><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Avaliação inicial do consumo</li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Atendimento em São Paulo e região</li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>Projeto residencial ou empresarial</li></ul></div>
         <div class="rounded-2xl bg-surface p-6 text-ink shadow-soft sm:p-8">
-          <h3 class="text-2xl font-extrabold tracking-[-0.02em]">Conte sobre o seu projeto</h3>
-          <p class="mt-2 text-sm text-ink-muted">Todos os campos são obrigatórios.</p>
+          <h3 class="text-2xl font-extrabold tracking-[-0.02em]">Conte sobre o imóvel</h3><p class="mt-2 text-sm text-ink-muted">Todos os campos são obrigatórios.</p>
           <form class="mt-7 grid gap-5 sm:grid-cols-2" id="leadForm" aria-describedby="privacyNote">
             <div class="form-field"><label class="form-label" for="nome">Nome completo</label><input class="form-control" id="nome" name="nome" type="text" minlength="2" maxlength="120" placeholder="Como podemos chamar você?" autocomplete="name" required /></div>
             <div class="form-field"><label class="form-label" for="email">E-mail</label><input class="form-control" id="email" name="email" type="email" placeholder="voce@exemplo.com" autocomplete="email" required /></div>
             <div class="form-field"><label class="form-label" for="telefone">Telefone com DDD</label><input class="form-control" id="telefone" name="telefone" type="tel" inputmode="tel" maxlength="15" placeholder="(11) 99999-9999" autocomplete="tel" required /></div>
             <div class="form-field"><label class="form-label" for="cidade">Cidade</label><input class="form-control" id="cidade" name="cidade" type="text" minlength="2" maxlength="120" placeholder="Sua cidade / UF" autocomplete="address-level2" required /></div>
             <div class="form-field sm:col-span-2"><label class="form-label" for="conta">Valor médio da conta de luz</label><select class="form-control" id="conta" name="conta" required><option value="" selected disabled>Selecione uma faixa</option><option>Até R$ 150</option><option>R$ 151 – R$ 300</option><option>R$ 301 – R$ 500</option><option>R$ 501 – R$ 800</option><option>Acima de R$ 800</option></select></div>
-            <div class="grid gap-3 sm:col-span-2">
-              <button class="button button-primary w-full" type="submit" disabled>Solicitar minha avaliação <svg class="size-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></button>
-              <p class="text-xs leading-5 text-ink-muted" id="privacyNote">Ao enviar, você concorda em ser contatado pela SolarMais sobre esta solicitação.</p>
-            </div>
+            <div class="grid gap-3 sm:col-span-2"><button class="button button-primary w-full" type="submit" disabled>Solicitar avaliação <svg class="size-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></button><p class="text-xs leading-5 text-ink-muted" id="privacyNote">Ao enviar, você concorda em ser contatado pela SolarMais sobre esta solicitação.</p></div>
             <p id="formMsg" class="form-message sm:col-span-2" role="status" aria-live="polite" hidden></p>
           </form>
           <noscript><p class="mt-4 text-sm text-danger">Ative o JavaScript para utilizar o formulário de contato.</p></noscript>
@@ -155,15 +163,9 @@
     </section>
   </main>
 
-  <footer class="bg-surface-raised">
-    <div class="page-shell flex flex-col justify-between gap-8 py-12 md:flex-row md:items-end">
-      <div>
-        <a class="inline-flex min-h-11 items-center gap-2.5 text-xl font-extrabold tracking-[-0.03em]" href="#topo" aria-label="SolarMais — início"><svg class="size-8 text-brand" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6" fill="currentColor" /><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path d="M16 2v5M16 25v5M2 16h5M25 16h5M6.1 6.1l3.6 3.6M22.3 22.3l3.6 3.6M25.9 6.1l-3.6 3.6M9.7 22.3l-3.6 3.6" /></g></svg><span>Solar<span class="text-brand-strong">Mais</span></span></a>
-        <p class="mt-3 max-w-md text-sm text-ink-muted">Soluções em energia solar para residências e empresas em São Paulo.</p>
-      </div>
-      <nav class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-ink-muted" aria-label="Navegação do rodapé"><a class="min-h-11 content-center hover:text-ink" href="#beneficios">Benefícios</a><a class="min-h-11 content-center hover:text-ink" href="#solucoes">Soluções</a><a class="min-h-11 content-center hover:text-ink" href="#duvidas">Dúvidas</a><a class="min-h-11 content-center hover:text-ink" href="#cadastro">Contato</a></nav>
-    </div>
-    <div class="page-shell flex flex-col justify-between gap-3 border-t border-line py-6 text-xs text-ink-muted sm:flex-row"><p>© <span id="currentYear">2026</span> SolarMais. Todos os direitos reservados.</p><a class="font-semibold underline decoration-line underline-offset-4 hover:text-ink" href="#topo">Voltar ao topo</a></div>
+  <footer class="bg-black text-on-brand-dark">
+    <div class="page-shell flex flex-col justify-between gap-8 py-12 md:flex-row md:items-end"><div><a class="inline-flex min-h-12 items-center" href="#topo" aria-label="SolarMais — início"><span class="brand-lockup" aria-hidden="true"><img src="assets/images/Logo.jpg" width="150" height="150" alt="" loading="lazy" /></span></a><p class="mt-3 max-w-md text-sm text-on-brand-dark-muted">Soluções em energia solar para residências e empresas em São Paulo.</p></div><nav class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-on-brand-dark-muted" aria-label="Navegação do rodapé"><a class="min-h-11 content-center hover:text-on-brand-dark" href="#solucoes">Soluções</a><a class="min-h-11 content-center hover:text-on-brand-dark" href="projetos.html">Projetos</a><a class="min-h-11 content-center hover:text-on-brand-dark" href="#beneficios">Benefícios</a><a class="min-h-11 content-center hover:text-on-brand-dark" href="#duvidas">Dúvidas</a><a class="min-h-11 content-center hover:text-on-brand-dark" href="#cadastro">Contato</a></nav></div>
+    <div class="page-shell flex flex-col justify-between gap-3 border-t border-white/20 py-6 text-xs text-on-brand-dark-muted sm:flex-row"><p>© <span id="currentYear">2026</span> SolarMais. Todos os direitos reservados.</p><a class="font-semibold underline decoration-white/30 underline-offset-4 hover:text-on-brand-dark" href="#topo">Voltar ao topo</a></div>
   </footer>
 </body>
 </html>

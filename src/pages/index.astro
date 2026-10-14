@@ -1,0 +1,136 @@
+---
+import Layout from '../components/Layout.astro';
+import { getContent } from '../lib/content.js';
+const content = await getContent();
+const page = content.home;
+---
+<Layout content={content} title={content.siteTitle}>
+<main id="conteudo" tabindex="-1">
+    <section class="hero-stage" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"><img src={content.heroImage} width="1536" height="1024" alt="" fetchpriority="high" decoding="async" /></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="page-shell hero-content">
+        <div class="hero-layout">
+          <div class="hero-copy max-w-[760px] py-20 sm:py-24 lg:py-32">
+            <p class="hero-kicker"><span></span> Energia solar, projetada com precisão</p>
+            <h1 id="hero-title" class="max-w-[12ch] text-[clamp(2.8rem,7vw,5.8rem)] leading-[.98] font-extrabold tracking-[-0.04em] text-white text-balance">{page.hero.text1}</h1>
+            <p class="mt-7 max-w-[58ch] text-lg leading-8 text-white/80 sm:text-xl">{page.hero.text2}</p>
+            <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a class="button button-primary" href="#cadastro">{page.hero.text3} <svg class="size-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a>
+              <a class="button button-on-dark" href="#como-funciona">{page.hero.text4}</a>
+            </div>
+            <p class="mt-5 flex items-center gap-2 text-sm font-semibold text-white/75"><svg class="size-4 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" /><path d="m8.5 12 2.2 2.2 4.8-5" /></svg>{page.hero.text5}</p>
+          </div>
+          <div class="hero-interface" role="img" aria-label="Representação visual das etapas de um projeto de energia solar">
+            <div class="hero-interface-top"><span>MAPA DE POTENCIAL</span><span class="hero-interface-status"><i></i> EM ANÁLISE</span></div>
+            <div class="solar-orbit" aria-hidden="true"><span></span><span></span><b></b></div>
+            <div class="hero-interface-readout"><div><span>LUZ</span><strong>CAPTAÇÃO</strong></div><div><span>FLUXO</span><strong>CONVERSÃO</strong></div><div><span>USO</span><strong>CONSUMO</strong></div></div>
+            <div class="hero-interface-footer"><span>PROJETO · INSTALAÇÃO · REDE</span><svg viewBox="0 0 40 10" aria-hidden="true"><path d="M1 5h31M27 1l4 4-4 4" /></svg></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-facts">
+        <div class="page-shell grid md:grid-cols-3">
+          <div class="fact-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 17l2-7h8l2 7H6ZM10 10V7h4v3M12 3v2" /></svg><div><strong>{page.hero.text6}</strong><span>{page.hero.text7}</span></div></div>
+          <div class="fact-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v4H7zM5 5H3v16h18V5h-2M8 12h8M8 16h5" /></svg><div><strong>{page.hero.text8}</strong><span>{page.hero.text9}</span></div></div>
+          <div class="fact-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13a8 8 0 0 1 16 0M4 13v5h3v-5H4ZM17 13v5h3v-5h-3ZM17 18c0 2-2 3-5 3" /></svg><div><strong>{page.hero.text10}</strong><span>{page.hero.text11}</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space section-radiant overflow-hidden" aria-labelledby="about-title">
+      <div class="page-shell grid items-center gap-14 lg:grid-cols-[.82fr_1.18fr] lg:gap-24">
+        <div>
+          <h2 id="about-title" class="section-heading">{page.about.text1}</h2>
+          <p class="section-copy mt-6">{page.about.text2}</p>
+          <a class="text-link mt-8" href="#cadastro">{page.about.text3} <svg class="size-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a>
+        </div>
+        <div class="energy-flow" aria-label="Fluxo simplificado de um sistema de energia solar">
+          <p class="section-eyebrow">VISÃO DO SISTEMA</p>
+          <svg class="energy-flow-art" viewBox="0 0 720 360" role="img" aria-labelledby="flow-title flow-desc">
+            <title id="flow-title">Da luz solar ao uso de energia no imóvel</title>
+            <desc id="flow-desc">O sol ilumina os painéis no telhado. A energia passa pelo inversor e alimenta o imóvel, conectado à rede elétrica.</desc>
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <circle class="flow-accent" cx="88" cy="78" r="28" /><path class="flow-accent" d="M88 25v20M88 111v20M35 78h20M121 78h20M50 40l14 14M112 102l14 14M126 40l-14 14M64 102l-14 14" />
+              <path d="M190 218 360 112l170 106M225 197v105h270V197" /><path class="flow-accent" d="m274 174 116-42 46 42-116 43-46-43Z" /><path class="flow-accent" d="m303 163 46 43M343 148l46 43M386 137l42 39M305 186l116-42" />
+              <rect x="385" y="224" width="48" height="64" rx="4" /><path d="M399 245h20M409 235v20M530 260h54M584 224v72M584 238h52M636 214v96" /><path class="flow-signal" d="M140 92c60 8 78 32 104 76M366 217c5 16 22 22 38 18M433 257h-14M584 260h-46" />
+            </g>
+          </svg>
+          <ol class="energy-flow-labels">
+            <li><strong>{page.about.text4}</strong><span>{page.about.text5}</span></li><li><strong>{page.about.text6}</strong><span>{page.about.text7}</span></li><li><strong>{page.about.text8}</strong><span>{page.about.text9}</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucoes" class="section-space solutions-stage bg-brand-dark text-on-brand-dark" aria-labelledby="solutions-title">
+      <div class="page-shell">
+        <div class="grid gap-7 lg:grid-cols-[.75fr_1.25fr] lg:items-end lg:gap-20">
+          <h2 id="solutions-title" class="max-w-[14ch] text-4xl leading-[1.06] font-extrabold tracking-[-0.03em] text-on-brand-dark sm:text-5xl">{page.solucoes.text1}</h2>
+          <p class="max-w-[62ch] text-base leading-7 text-on-brand-dark-muted lg:justify-self-end">{page.solucoes.text2}</p>
+        </div>
+        <div class="solution-list mt-14 grid md:grid-cols-3">
+          <article class="solution-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10M9 20v-6h6v6" /></svg><div><h3>{page.solucoes.text3}</h3><p>{page.solucoes.text4}</p></div></article>
+          <article class="solution-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V6h11v15M15 10h5v11M8 10h3M8 14h3M8 18h3" /></svg><div><h3>{page.solucoes.text5}</h3><p>{page.solucoes.text6}</p></div></article>
+          <article class="solution-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l6 3V9l6 4V6h6v15H3ZM7 17h2M13 17h2M18 10h3" /></svg><div><h3>{page.solucoes.text7}</h3><p>{page.solucoes.text8}</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section-space" aria-labelledby="projects-title">
+      <div class="page-shell portfolio-teaser"><div><h2 id="projects-title" class="section-heading">{page.projetos.text1}</h2><p class="section-copy mt-6">{page.projetos.text2}</p><a class="button button-primary mt-8" href="/projetos/">{page.projetos.text3}</a></div><figure><img src={content.heroImage} width="1536" height="1024" alt="Ilustração de painéis solares sobre um telhado" loading="lazy"><figcaption>{page.projetos.text4}</figcaption></figure></div>
+    </section>
+
+    <section id="beneficios" class="section-space benefits-stage bg-surface-raised" aria-labelledby="benefits-title">
+      <div class="page-shell grid gap-12 lg:grid-cols-[.72fr_1.28fr] lg:gap-24">
+        <div class="lg:sticky lg:top-28 lg:self-start"><h2 id="benefits-title" class="section-heading">{page.beneficios.text1}</h2><p class="section-copy mt-6">{page.beneficios.text2}</p></div>
+        <div>
+          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19h16M7 16l4-4 3 2 4-6" /><path d="M14 8h4v4" /></svg></span><div><h3>{page.beneficios.text3}</h3><p>{page.beneficios.text4}</p></div></article>
+          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10M9 20v-6h6v6" /></svg></span><div><h3>{page.beneficios.text5}</h3><p>{page.beneficios.text6}</p></div></article>
+          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 4C9 3 3 8 5 15c6 5 15-1 15-11Z" /><path d="M4 21 15 10" /></svg></span><div><h3>{page.beneficios.text7}</h3><p>{page.beneficios.text8}</p></div></article>
+          <article class="feature-row"><span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" /><path d="m8 12 3 3 5-6" /></svg></span><div><h3>{page.beneficios.text9}</h3><p>{page.beneficios.text10}</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="section-space" aria-labelledby="process-title">
+      <div class="page-shell">
+        <div class="grid gap-7 lg:grid-cols-[.78fr_1.22fr] lg:items-end lg:gap-20"><h2 id="process-title" class="section-heading">{page.como_funciona.text1}</h2><p class="section-copy lg:justify-self-end">{page.como_funciona.text2}</p></div>
+        <ol class="process-list mt-14 grid md:grid-cols-2 lg:grid-cols-4">
+          <li><span>{page.como_funciona.text3}</span><h3>{page.como_funciona.text4}</h3><p>{page.como_funciona.text5}</p></li><li><span>{page.como_funciona.text6}</span><h3>{page.como_funciona.text7}</h3><p>{page.como_funciona.text8}</p></li><li><span>{page.como_funciona.text9}</span><h3>{page.como_funciona.text10}</h3><p>{page.como_funciona.text11}</p></li><li><span>{page.como_funciona.text12}</span><h3>{page.como_funciona.text13}</h3><p>{page.como_funciona.text14}</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="decision-band" aria-labelledby="decision-title"><div class="page-shell grid items-center gap-8 py-12 md:grid-cols-[1fr_auto] md:py-16"><div><h2 id="decision-title" class="max-w-[25ch] text-3xl leading-tight font-extrabold tracking-[-0.03em] text-brand-ink sm:text-4xl">{page.decision.text1}</h2><p class="mt-3 max-w-[62ch] text-sm leading-6 text-brand-ink/75 sm:text-base">{page.decision.text2}</p></div><a class="button button-dark" href="#cadastro">{page.decision.text3} <svg class="size-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a></div></section>
+
+    <section id="duvidas" class="section-space" aria-labelledby="faq-title">
+      <div class="page-shell grid gap-10 lg:grid-cols-[.7fr_1.3fr] lg:gap-24">
+        <div><h2 id="faq-title" class="section-heading">{page.duvidas.text1}</h2><p class="section-copy mt-6">{page.duvidas.text2}</p></div>
+        <div>
+{content.faqs.map(item => <details class="faq-item"><summary class="faq-summary">{item.question}</summary><p>{item.answer}</p></details>)}
+        </div>
+      </div>
+    </section>
+
+    <section id="cadastro" class="section-space bg-brand-dark text-on-brand-dark" aria-labelledby="contact-title">
+      <div class="page-shell grid items-start gap-12 lg:grid-cols-[.82fr_1.18fr] lg:gap-24">
+        <div class="lg:sticky lg:top-28"><h2 id="contact-title" class="max-w-[13ch] text-4xl leading-[1.06] font-extrabold tracking-[-0.03em] text-on-brand-dark sm:text-5xl">{page.cadastro.text1}</h2><p class="mt-6 max-w-[48ch] text-base leading-7 text-on-brand-dark-muted">{page.cadastro.text2}</p><ul class="contact-points mt-9"><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>{page.cadastro.text3}</li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>{page.cadastro.text4}</li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8" /></svg>{page.cadastro.text5}</li></ul></div>
+        <div class="rounded-2xl bg-surface p-6 text-ink shadow-soft sm:p-8">
+          <h3 class="text-2xl font-extrabold tracking-[-0.02em]">{page.cadastro.text6}</h3><p class="mt-2 text-sm text-ink-muted">{page.cadastro.text7}</p>
+          <form class="mt-7 grid gap-5 sm:grid-cols-2" id="leadForm" data-endpoint={import.meta.env.PUBLIC_LEAD_ENDPOINT || ""} aria-describedby="privacyNote">
+            <div class="form-field"><label class="form-label" for="nome">{page.cadastro.text8}</label><input class="form-control" id="nome" name="nome" type="text" minlength="2" maxlength="120" placeholder="Como podemos chamar você?" autocomplete="name" required /></div>
+            <div class="form-field"><label class="form-label" for="email">{page.cadastro.text9}</label><input class="form-control" id="email" name="email" type="email" placeholder="voce@exemplo.com" autocomplete="email" required /></div>
+            <div class="form-field"><label class="form-label" for="telefone">{page.cadastro.text10}</label><input class="form-control" id="telefone" name="telefone" type="tel" inputmode="tel" maxlength="15" placeholder="(11) 99999-9999" autocomplete="tel" required /></div>
+            <div class="form-field"><label class="form-label" for="cidade">{page.cadastro.text11}</label><input class="form-control" id="cidade" name="cidade" type="text" minlength="2" maxlength="120" placeholder="Sua cidade / UF" autocomplete="address-level2" required /></div>
+            <div class="form-field sm:col-span-2"><label class="form-label" for="conta">{page.cadastro.text12}</label><select class="form-control" id="conta" name="conta" required><option value="" selected disabled>{page.cadastro.text13}</option><option>{page.cadastro.text14}</option><option>{page.cadastro.text15}</option><option>{page.cadastro.text16}</option><option>{page.cadastro.text17}</option><option>{page.cadastro.text18}</option></select></div>
+            <div class="grid gap-3 sm:col-span-2"><button class="button button-primary w-full" type="submit" disabled>{page.cadastro.text19} <svg class="size-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></button><p class="text-xs leading-5 text-ink-muted" id="privacyNote">{page.cadastro.text20}</p></div>
+            <p id="formMsg" class="form-message sm:col-span-2" role="status" aria-live="polite" hidden></p>
+          </form>
+          <noscript><p class="mt-4 text-sm text-danger">Ative o JavaScript para utilizar o formulário de contato.</p></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

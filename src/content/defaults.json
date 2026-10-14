@@ -1,0 +1,167 @@
+{
+  "home": {
+    "hero": {
+      "text1": "Energia do sol para uma rotina mais previsível.",
+      "text2": "A SolarMais planeja soluções fotovoltaicas para residências e empresas e acompanha o projeto do dimensionamento à homologação.",
+      "text3": "Avaliar meu imóvel",
+      "text4": "Entender as etapas",
+      "text5": "Atendimento em São Paulo e região",
+      "text6": "Projeto dimensionado",
+      "text7": "Para o consumo e o imóvel",
+      "text8": "Etapas acompanhadas",
+      "text9": "Da análise à homologação",
+      "text10": "Atendimento próximo",
+      "text11": "Orientação durante o projeto"
+    },
+    "about": {
+      "text1": "Energia solar começa com um projeto que cabe na sua realidade.",
+      "text2": "Antes de falar em equipamentos, é preciso entender consumo, espaço disponível e condições do imóvel. A SolarMais reúne essas informações para orientar uma solução coerente com cada cenário.",
+      "text3": "Conversar sobre meu imóvel",
+      "text4": "1. Captação",
+      "text5": "Os módulos recebem a luz solar.",
+      "text6": "2. Conversão",
+      "text7": "O inversor prepara a energia para uso.",
+      "text8": "3. Consumo",
+      "text9": "O imóvel utiliza a energia gerada."
+    },
+    "solucoes": {
+      "text1": "Soluções pensadas para diferentes rotinas de consumo.",
+      "text2": "O porte do sistema depende da demanda de energia, da área disponível e das condições técnicas do local. A avaliação inicial ajuda a definir o caminho.",
+      "text3": "Residencial",
+      "text4": "Para casas que desejam produzir energia no próprio telhado e reduzir a exposição às variações da tarifa.",
+      "text5": "Comercial",
+      "text6": "Para lojas e escritórios que buscam mais previsibilidade sobre uma despesa recorrente da operação.",
+      "text7": "Pequena indústria",
+      "text8": "Para operações com maior demanda e necessidade de aproveitar de forma eficiente a área disponível."
+    },
+    "projetos": {
+      "text1": "Cada projeto tem uma história.",
+      "text2": "Explore o portfólio da SolarMais e veja os detalhes de cada instalação.",
+      "text3": "Explorar portfólio",
+      "text4": "Imagem ilustrativa"
+    },
+    "beneficios": {
+      "text1": "O que muda quando o imóvel gera parte da própria energia.",
+      "text2": "A energia solar combina planejamento técnico, geração renovável e acompanhamento do desempenho do sistema.",
+      "text3": "Mais previsibilidade",
+      "text4": "Produzir energia no imóvel reduz a dependência das variações tarifárias, conforme o desempenho e a compensação do sistema.",
+      "text5": "Infraestrutura mais preparada",
+      "text6": "A geração própria incorpora tecnologia ao imóvel e organiza o consumo de energia para o longo prazo.",
+      "text7": "Fonte renovável",
+      "text8": "Os módulos aproveitam a luz do sol para gerar eletricidade durante o dia, sem emissão direta na operação.",
+      "text9": "Decisão técnica",
+      "text10": "Estrutura, consumo, proteções e regras da distribuidora entram na análise antes da definição do sistema."
+    },
+    "como_funciona": {
+      "text1": "Um caminho claro até começar a gerar.",
+      "text2": "Você acompanha as decisões enquanto a SolarMais organiza as etapas técnicas e a documentação do projeto.",
+      "text3": "01",
+      "text4": "Entendimento",
+      "text5": "Reunimos localização, conta de luz e características do imóvel.",
+      "text6": "02",
+      "text7": "Dimensionamento",
+      "text8": "A solução é planejada conforme demanda, espaço e condições do local.",
+      "text9": "03",
+      "text10": "Instalação",
+      "text11": "Os equipamentos são instalados conforme o projeto definido.",
+      "text12": "04",
+      "text13": "Homologação",
+      "text14": "O processo com a distribuidora prepara o sistema para operar conectado à rede."
+    },
+    "decision": {
+      "text1": "Seu imóvel pode ter potencial para gerar a própria energia.",
+      "text2": "Conte onde ele está e qual é a faixa da conta de luz. Esses dados ajudam a iniciar a avaliação.",
+      "text3": "Começar avaliação"
+    },
+    "duvidas": {
+      "text1": "Informação para decidir com mais segurança.",
+      "text2": "Se a sua dúvida não estiver aqui, conte um pouco sobre o imóvel no formulário."
+    },
+    "cadastro": {
+      "text1": "Vamos entender o seu projeto.",
+      "text2": "Envie os dados básicos do imóvel. Um especialista poderá compreender sua necessidade e orientar o próximo passo.",
+      "text3": "Avaliação inicial do consumo",
+      "text4": "Atendimento em São Paulo e região",
+      "text5": "Projeto residencial ou empresarial",
+      "text6": "Conte sobre o imóvel",
+      "text7": "Todos os campos são obrigatórios.",
+      "text8": "Nome completo",
+      "text9": "E-mail",
+      "text10": "Telefone com DDD",
+      "text11": "Cidade",
+      "text12": "Valor médio da conta de luz",
+      "text13": "Selecione uma faixa",
+      "text14": "Até R$ 150",
+      "text15": "R$ 151 – R$ 300",
+      "text16": "R$ 301 – R$ 500",
+      "text17": "R$ 501 – R$ 800",
+      "text18": "Acima de R$ 800",
+      "text19": "Solicitar avaliação",
+      "text20": "Ao enviar, você concorda em ser contatado pela SolarMais sobre esta solicitação."
+    }
+  },
+  "portfolio": {
+    "portfolio": {
+      "text1": "Voltar ao início",
+      "text2": "Galeria de projetos",
+      "text3": "Explore as instalações pelas imagens. Selecione um projeto para ver todas as fotos e os detalhes.",
+      "text4": "Prévia do portfólio · O exemplo abaixo utiliza uma imagem ilustrativa e não representa uma obra realizada pela SolarMais."
+    },
+    "page_shell": {
+      "text1": "Todos",
+      "text2": "Residencial",
+      "text3": "Comercial",
+      "text4": "Industrial",
+      "text5": "Buscar projeto ou cidade",
+      "text6": "Nenhum projeto encontrado.",
+      "text7": "Experimente outra categoria ou busque por outro nome.",
+      "text8": "Limpar filtros",
+      "text9": "Voltar à galeria",
+      "text10": "O próximo projeto pode ser o seu.",
+      "text11": "Vamos conversar sobre o potencial do seu imóvel.",
+      "text12": "Solicitar avaliação"
+    }
+  },
+  "siteTitle": "SolarMais — Energia solar em São Paulo",
+  "portfolioTitle": "Projetos | SolarMais",
+  "description": "Soluções de energia solar para residências e empresas em São Paulo. Entenda as etapas e solicite uma avaliação para o seu imóvel.",
+  "footerText": "Soluções em energia solar para residências e empresas em São Paulo.",
+  "logo": "/assets/images/Logo.jpg",
+  "heroImage": "/assets/images/solar-rooftop-hero.jpg",
+  "phone": "",
+  "email": "",
+  "whatsapp": "",
+  "instagram": "",
+  "faqs": [
+    {
+      "_key": "faq0",
+      "question": "Como é feita a avaliação inicial?",
+      "answer": "Começamos pela localização e pela conta de luz. A análise considera consumo, características do imóvel e espaço disponível.",
+      "_type": "faq"
+    },
+    {
+      "_key": "faq1",
+      "question": "Posso instalar em casa ou na empresa?",
+      "answer": "Sim. Atendemos projetos residenciais, comerciais e para pequenas indústrias, sempre sujeitos à avaliação técnica.",
+      "_type": "faq"
+    },
+    {
+      "_key": "faq2",
+      "question": "O que está incluído no projeto?",
+      "answer": "A proposta deve detalhar dimensionamento, equipamentos, instalação, homologação, garantias aplicáveis e serviços contratados.",
+      "_type": "faq"
+    },
+    {
+      "_key": "faq3",
+      "question": "Quanto tempo leva para instalar?",
+      "answer": "O prazo varia conforme porte, condições do imóvel e etapas da distribuidora. O cronograma é apresentado depois da avaliação.",
+      "_type": "faq"
+    },
+    {
+      "_key": "faq4",
+      "question": "O que preciso informar primeiro?",
+      "answer": "Cidade, faixa de valor da conta de luz e dados de contato ajudam a iniciar a conversa. Outras informações podem ser solicitadas conforme o imóvel.",
+      "_type": "faq"
+    }
+  ]
+}

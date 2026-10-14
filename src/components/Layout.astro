@@ -1,0 +1,27 @@
+---
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+const { content, title } = Astro.props;
+---
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#000000" />
+    <title>{title}</title>
+    <meta name="description" content={content.description} />
+    <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="icon" href={content.logo} />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script is:inline src="/assets/js/theme.js"></script>
+    <script is:inline src="/assets/js/main.js" defer></script>
+  </head>
+  <body id="topo" class="bg-canvas text-ink antialiased">
+    <a class="fixed top-3 left-3 z-[100] -translate-y-24 rounded-lg bg-brand px-4 py-3 font-bold text-brand-ink transition focus:translate-y-0" href="#conteudo">Pular para o conteúdo</a>
+    <Header content={content} />
+    <slot />
+    <Footer content={content} />
+  </body>
+</html>

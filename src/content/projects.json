@@ -1,0 +1,61 @@
+[
+  {
+    "id": "simulacao-residencia-horizonte",
+    "title": "Residência Horizonte",
+    "category": "Residencial",
+    "city": "Jundiaí / SP",
+    "description": "Simulação de um sistema residencial planejado para aproveitar as duas águas do telhado e acompanhar o consumo diurno do imóvel.",
+    "power": "6,6 kWp (simulado)",
+    "completed": "Agosto de 2026 (simulado)",
+    "modules": "12 módulos (simulado)",
+    "simulated": true,
+    "photos": [
+      {
+        "src": "/assets/images/projetos/simulacao-residencial.webp",
+        "alt": "Simulação de painéis solares instalados no telhado de uma residência",
+        "caption": "Vista geral da instalação residencial simulada."
+      },
+      {
+        "src": "/assets/images/solar-rooftop-hero.jpg",
+        "alt": "Imagem ilustrativa de painéis solares em um telhado residencial",
+        "caption": "Imagem complementar ilustrativa do cenário residencial."
+      }
+    ]
+  },
+  {
+    "id": "simulacao-mercado-central",
+    "title": "Mercado Central",
+    "category": "Comercial",
+    "city": "Campinas / SP",
+    "description": "Simulação comercial com distribuição dos módulos em cobertura plana, preservando áreas técnicas e acessos de manutenção.",
+    "power": "48,4 kWp (simulado)",
+    "completed": "Julho de 2026 (simulado)",
+    "modules": "88 módulos (simulado)",
+    "simulated": true,
+    "photos": [
+      {
+        "src": "/assets/images/projetos/simulacao-comercial.webp",
+        "alt": "Simulação de painéis solares na cobertura de um estabelecimento comercial",
+        "caption": "Distribuição simulada dos módulos na cobertura comercial."
+      }
+    ]
+  },
+  {
+    "id": "simulacao-industria-vale",
+    "title": "Indústria Vale",
+    "category": "Industrial",
+    "city": "Sorocaba / SP",
+    "description": "Simulação de uma instalação para pequena indústria, com fileiras de módulos organizadas sobre a cobertura metálica.",
+    "power": "132 kWp (simulado)",
+    "completed": "Maio de 2026 (simulado)",
+    "modules": "240 módulos (simulado)",
+    "simulated": true,
+    "photos": [
+      {
+        "src": "/assets/images/projetos/simulacao-industrial.webp",
+        "alt": "Simulação de uma instalação solar sobre cobertura industrial",
+        "caption": "Vista aérea da instalação industrial simulada."
+      }
+    ]
+  }
+]

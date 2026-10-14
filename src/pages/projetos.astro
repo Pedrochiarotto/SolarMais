@@ -1,0 +1,32 @@
+---
+import Layout from '../components/Layout.astro';
+import { serializeJson } from '../lib/content-core.js';
+import { getContent } from '../lib/content.js';
+const content = await getContent();
+const page = content.portfolio;
+---
+<Layout content={content} title={content.portfolioTitle}>
+<main id="conteudo" tabindex="-1" class="portfolio-main">
+<section class="page-shell portfolio-intro" aria-labelledby="portfolio-title">
+<p class="portfolio-eyebrow"><span></span> Projetos em foco · energia em movimento</p>
+<a class="text-link" href="/">{page.portfolio.text1}</a>
+<div class="portfolio-heading"><h1 id="portfolio-title">{page.portfolio.text2}</h1><p>{page.portfolio.text3}</p></div>
+<p id="portfolio-preview" class="portfolio-notice" hidden>{page.portfolio.text4}</p>
+</section>
+<section class="page-shell portfolio-collection" aria-label="Galeria de projetos">
+<div id="portfolio-controls" class="portfolio-controls" hidden>
+<div class="portfolio-filters" role="group" aria-label="Filtrar por tipo de projeto">
+<button type="button" data-category="Todos" aria-pressed="true">{page.page_shell.text1}</button><button type="button" data-category="Residencial" aria-pressed="false">{page.page_shell.text2}</button><button type="button" data-category="Comercial" aria-pressed="false">{page.page_shell.text3}</button><button type="button" data-category="Industrial" aria-pressed="false">{page.page_shell.text4}</button>
+</div><label class="portfolio-search">{page.page_shell.text5}<input class="form-control" id="project-search" type="search" placeholder="Nome ou localização" autocomplete="off"></label>
+</div>
+<p id="project-count" class="portfolio-count" role="status" aria-live="polite"></p>
+<div id="project-grid" class="portfolio-grid"></div>
+<div id="project-empty" class="portfolio-empty" hidden><h2>{page.page_shell.text6}</h2><p>{page.page_shell.text7}</p><button type="button" class="button button-secondary" id="reset-projects">{page.page_shell.text8}</button></div>
+<noscript><p>Ative o JavaScript para explorar a galeria de projetos e seus detalhes.</p></noscript>
+<article id="project-detail" class="portfolio-detail" aria-labelledby="detail-title" hidden tabindex="-1"><a class="text-link" href="#projetos">{page.page_shell.text9}</a><h2 id="detail-title"></h2><p id="detail-description"></p><dl id="detail-facts"></dl><div id="detail-photos"></div></article>
+</section>
+<section class="page-shell portfolio-contact"><div><h2>{page.page_shell.text10}</h2><p>{page.page_shell.text11}</p></div><a class="button button-primary" href="/#cadastro">{page.page_shell.text12}</a></section>
+</main>
+<script id="project-data" type="application/json" set:html={serializeJson(content.projects)} />
+<script is:inline src="/assets/js/projects.js" defer></script>
+</Layout>

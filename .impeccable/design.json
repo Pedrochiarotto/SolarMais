@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T00:00:00-03:00",
+  "title": "Design System: SolarMais",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Papel Solar",
+        "tonalRamp": ["oklch(15% 0.008 90)", "oklch(27% 0.008 90)", "oklch(39% 0.008 90)", "oklch(51% 0.008 90)", "oklch(63% 0.008 90)", "oklch(75% 0.008 90)", "oklch(87% 0.008 90)", "oklch(95% 0.008 90)"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Branco de Superfície",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(51% 0 0)", "oklch(63% 0 0)", "oklch(75% 0 0)", "oklch(87% 0 0)", "oklch(95% 0 0)"]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Cinza Elevado",
+        "tonalRamp": ["oklch(15% 0.006 90)", "oklch(27% 0.006 90)", "oklch(39% 0.006 90)", "oklch(51% 0.006 90)", "oklch(63% 0.006 90)", "oklch(75% 0.006 90)", "oklch(87% 0.006 90)", "oklch(95% 0.006 90)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "tonalRamp": ["oklch(15% 0.005 90)", "oklch(27% 0.005 90)", "oklch(39% 0.005 90)", "oklch(51% 0.005 90)", "oklch(63% 0.005 90)", "oklch(75% 0.005 90)", "oklch(87% 0.005 90)", "oklch(95% 0.005 90)"]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Tinta Suave",
+        "tonalRamp": ["oklch(15% 0.008 105)", "oklch(27% 0.008 105)", "oklch(39% 0.008 105)", "oklch(51% 0.008 105)", "oklch(63% 0.008 105)", "oklch(75% 0.008 105)", "oklch(87% 0.008 105)", "oklch(95% 0.008 105)"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Linha Mineral",
+        "tonalRamp": ["oklch(15% 0.007 90)", "oklch(27% 0.007 90)", "oklch(39% 0.007 90)", "oklch(51% 0.007 90)", "oklch(63% 0.007 90)", "oklch(75% 0.007 90)", "oklch(87% 0.007 90)", "oklch(95% 0.007 90)"]
+      },
+      "brand-orange": {
+        "role": "primary",
+        "displayName": "Laranja Solar",
+        "tonalRamp": ["oklch(15% 0.11 48)", "oklch(27% 0.14 48)", "oklch(39% 0.17 48)", "oklch(51% 0.19 48)", "oklch(63% 0.2 48)", "oklch(75% 0.17 48)", "oklch(87% 0.1 48)", "oklch(95% 0.04 48)"]
+      },
+      "brand-orange-strong": {
+        "role": "primary",
+        "displayName": "Laranja Solar Profundo",
+        "tonalRamp": ["oklch(15% 0.1 43)", "oklch(27% 0.13 43)", "oklch(39% 0.16 43)", "oklch(51% 0.18 43)", "oklch(63% 0.18 43)", "oklch(75% 0.15 43)", "oklch(87% 0.09 43)", "oklch(95% 0.035 43)"]
+      },
+      "brand-orange-ink": {
+        "role": "neutral",
+        "displayName": "Tinta sobre Laranja",
+        "tonalRamp": ["oklch(15% 0.045 48)", "oklch(27% 0.045 48)", "oklch(39% 0.045 48)", "oklch(51% 0.045 48)", "oklch(63% 0.045 48)", "oklch(75% 0.045 48)", "oklch(87% 0.045 48)", "oklch(95% 0.045 48)"]
+      },
+      "brand-black": {
+        "role": "neutral",
+        "displayName": "Preto de Marca",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(27% 0 0)", "oklch(39% 0 0)", "oklch(51% 0 0)", "oklch(63% 0 0)", "oklch(75% 0 0)", "oklch(87% 0 0)", "oklch(95% 0 0)"]
+      },
+      "brand-black-soft": {
+        "role": "neutral",
+        "displayName": "Preto de Marca Suave",
+        "tonalRamp": ["oklch(15% 0.004 90)", "oklch(27% 0.004 90)", "oklch(39% 0.004 90)", "oklch(51% 0.004 90)", "oklch(63% 0.004 90)", "oklch(75% 0.004 90)", "oklch(87% 0.004 90)", "oklch(95% 0.004 90)"]
+      },
+      "on-brand-black": {
+        "role": "neutral",
+        "displayName": "Branco sobre Marca",
+        "tonalRamp": ["oklch(15% 0.006 90)", "oklch(27% 0.006 90)", "oklch(39% 0.006 90)", "oklch(51% 0.006 90)", "oklch(63% 0.006 90)", "oklch(75% 0.006 90)", "oklch(87% 0.006 90)", "oklch(95% 0.006 90)"]
+      },
+      "on-brand-black-muted": {
+        "role": "neutral",
+        "displayName": "Branco Suave sobre Marca",
+        "tonalRamp": ["oklch(15% 0.006 105)", "oklch(27% 0.006 105)", "oklch(39% 0.006 105)", "oklch(51% 0.006 105)", "oklch(63% 0.006 105)", "oklch(75% 0.006 105)", "oklch(87% 0.006 105)", "oklch(95% 0.006 105)"]
+      },
+      "success": {
+        "role": "tertiary",
+        "displayName": "Verde de Confirmação",
+        "tonalRamp": ["oklch(15% 0.08 150)", "oklch(27% 0.1 150)", "oklch(39% 0.12 150)", "oklch(51% 0.13 150)", "oklch(63% 0.12 150)", "oklch(75% 0.1 150)", "oklch(87% 0.06 150)", "oklch(95% 0.025 150)"]
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Vermelho de Erro",
+        "tonalRamp": ["oklch(15% 0.09 30)", "oklch(27% 0.12 30)", "oklch(39% 0.15 30)", "oklch(51% 0.17 30)", "oklch(63% 0.16 30)", "oklch(75% 0.12 30)", "oklch(87% 0.07 30)", "oklch(95% 0.03 30)"]
+      },
+      "dark-canvas": {
+        "role": "neutral",
+        "displayName": "Tela Noturna",
+        "tonalRamp": ["oklch(15% 0.004 90)", "oklch(27% 0.004 90)", "oklch(39% 0.004 90)", "oklch(51% 0.004 90)", "oklch(63% 0.004 90)", "oklch(75% 0.004 90)", "oklch(87% 0.004 90)", "oklch(95% 0.004 90)"]
+      },
+      "dark-surface": {
+        "role": "neutral",
+        "displayName": "Superfície Noturna",
+        "tonalRamp": ["oklch(15% 0.005 90)", "oklch(27% 0.005 90)", "oklch(39% 0.005 90)", "oklch(51% 0.005 90)", "oklch(63% 0.005 90)", "oklch(75% 0.005 90)", "oklch(87% 0.005 90)", "oklch(95% 0.005 90)"]
+      },
+      "dark-surface-raised": {
+        "role": "neutral",
+        "displayName": "Superfície Noturna Elevada",
+        "tonalRamp": ["oklch(15% 0.007 90)", "oklch(27% 0.007 90)", "oklch(39% 0.007 90)", "oklch(51% 0.007 90)", "oklch(63% 0.007 90)", "oklch(75% 0.007 90)", "oklch(87% 0.007 90)", "oklch(95% 0.007 90)"]
+      },
+      "dark-ink": {
+        "role": "neutral",
+        "displayName": "Tinta Noturna",
+        "tonalRamp": ["oklch(15% 0.006 90)", "oklch(27% 0.006 90)", "oklch(39% 0.006 90)", "oklch(51% 0.006 90)", "oklch(63% 0.006 90)", "oklch(75% 0.006 90)", "oklch(87% 0.006 90)", "oklch(95% 0.006 90)"]
+      },
+      "dark-ink-muted": {
+        "role": "neutral",
+        "displayName": "Tinta Noturna Suave",
+        "tonalRamp": ["oklch(15% 0.007 105)", "oklch(27% 0.007 105)", "oklch(39% 0.007 105)", "oklch(51% 0.007 105)", "oklch(63% 0.007 105)", "oklch(75% 0.007 105)", "oklch(87% 0.007 105)", "oklch(95% 0.007 105)"]
+      },
+      "dark-line": {
+        "role": "neutral",
+        "displayName": "Linha Noturna",
+        "tonalRamp": ["oklch(15% 0.008 90)", "oklch(27% 0.008 90)", "oklch(39% 0.008 90)", "oklch(51% 0.008 90)", "oklch(63% 0.008 90)", "oklch(75% 0.008 90)", "oklch(87% 0.008 90)", "oklch(95% 0.008 90)"]
+      },
+      "dark-brand-orange-strong": {
+        "role": "primary",
+        "displayName": "Laranja Solar Luminoso",
+        "tonalRamp": ["oklch(15% 0.1 48)", "oklch(27% 0.13 48)", "oklch(39% 0.16 48)", "oklch(51% 0.18 48)", "oklch(63% 0.18 48)", "oklch(75% 0.16 48)", "oklch(87% 0.1 48)", "oklch(95% 0.04 48)"]
+      },
+      "dark-success": {
+        "role": "tertiary",
+        "displayName": "Verde de Confirmação Noturno",
+        "tonalRamp": ["oklch(15% 0.08 150)", "oklch(27% 0.1 150)", "oklch(39% 0.12 150)", "oklch(51% 0.13 150)", "oklch(63% 0.12 150)", "oklch(75% 0.1 150)", "oklch(87% 0.06 150)", "oklch(95% 0.025 150)"]
+      },
+      "dark-danger": {
+        "role": "tertiary",
+        "displayName": "Vermelho de Erro Noturno",
+        "tonalRamp": ["oklch(15% 0.09 25)", "oklch(27% 0.12 25)", "oklch(39% 0.15 25)", "oklch(51% 0.17 25)", "oklch(63% 0.16 25)", "oklch(75% 0.12 25)", "oklch(87% 0.07 25)", "oklch(95% 0.03 25)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Argumento principal da primeira dobra, curto e com quebra controlada." },
+      "headline": { "displayName": "Headline", "purpose": "Títulos responsivos que introduzem cada seção." },
+      "title": { "displayName": "Title", "purpose": "Nomes de soluções, cartões e grupos de conteúdo." },
+      "body": { "displayName": "Body", "purpose": "Explicações e textos de apoio com medida confortável." },
+      "label": { "displayName": "Label", "purpose": "Navegação, botões, campos, índices e mensagens breves." }
+    },
+    "shadows": [
+      { "name": "soft", "value": "0 18px 50px -26px rgb(0 0 0 / 38%)", "purpose": "Elevação ambiente exclusiva do formulário sobre o campo preto." }
+    ],
+    "motion": [
+      { "name": "state", "value": "200ms ease-out", "purpose": "Hover e mudanças de estado em botões, links e campos." },
+      { "name": "hero-reveal", "value": "700–900ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Entrada única da fotografia e do texto do hero; removida quando há preferência por movimento reduzido." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "nav-mobile", "value": "1023px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão Primário",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal em laranja, usada uma vez por grupo decisório.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Solicitar avaliação <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M4 10h12M11 5l5 5-5 5\"/></svg></button>",
+      "css": ".ds-btn-primary { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 12px 20px; border: 1px solid var(--brand, #ff7417); border-radius: 8px; background: var(--brand, #ff7417); color: var(--brand-ink, #1f0d02); font: 700 14px/1.5 Manrope, ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: background-color 200ms ease-out, color 200ms ease-out, transform 200ms ease-out; } .ds-btn-primary svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } .ds-btn-primary:hover { background: var(--brand-strong, #b94706); color: var(--surface, #ffffff); transform: translateY(-2px); } .ds-btn-primary:active { transform: translateY(0); } .ds-btn-primary:focus-visible { outline: 3px solid var(--brand, #ff7417); outline-offset: 4px; }"
+    },
+    {
+      "name": "Botão Secundário",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ação complementar neutra para pares de CTA sobre superfícies claras.",
+      "html": "<button class=\"ds-btn-secondary\" type=\"button\">Ver como funciona</button>",
+      "css": ".ds-btn-secondary { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; padding: 12px 20px; border: 1px solid var(--line, #d9d8d2); border-radius: 8px; background: var(--surface, #ffffff); color: var(--ink, #11110f); font: 700 14px/1.5 Manrope, ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: border-color 200ms ease-out, transform 200ms ease-out; } .ds-btn-secondary:hover { border-color: var(--ink-muted, #5d5e59); transform: translateY(-2px); } .ds-btn-secondary:active { transform: translateY(0); } .ds-btn-secondary:focus-visible { outline: 3px solid var(--brand, #ff7417); outline-offset: 4px; }"
+    },
+    {
+      "name": "Campo de Texto",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Controle de formulário com rótulo forte, superfície de papel e foco laranja.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">E-mail</span><input class=\"ds-field-control\" type=\"email\" placeholder=\"voce@exemplo.com\"></label>",
+      "css": ".ds-field { display: flex; min-width: 0; flex-direction: column; gap: 8px; color: var(--ink, #11110f); font-family: Manrope, ui-sans-serif, system-ui, sans-serif; } .ds-field-label { font-size: 14px; line-height: 1.5; font-weight: 700; } .ds-field-control { min-height: 48px; width: 100%; padding: 0 14px; border: 1px solid var(--line, #d9d8d2); border-radius: 8px; background: var(--canvas, #f6f5f2); color: var(--ink, #11110f); font: 400 16px/1.6 Manrope, ui-sans-serif, system-ui, sans-serif; transition: border-color 200ms ease-out, box-shadow 200ms ease-out; } .ds-field-control::placeholder { color: var(--ink-muted, #5d5e59); } .ds-field-control:hover { border-color: var(--ink-muted, #5d5e59); } .ds-field-control:focus { border-color: var(--brand, #ff7417); outline: none; box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand, #ff7417) 15%, transparent); } .ds-field-control:focus-visible { outline: 3px solid var(--brand, #ff7417); outline-offset: 4px; }"
+    },
+    {
+      "name": "Navegação Principal",
+      "kind": "nav",
+      "description": "Navegação preta integrada à logo, com links claros e CTA laranja.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a class=\"ds-nav-link\" href=\"#beneficios\">Benefícios</a><a class=\"ds-nav-link\" href=\"#solucoes\">Soluções</a><a class=\"ds-nav-link\" href=\"#duvidas\">Dúvidas</a><a class=\"ds-nav-cta\" href=\"#cadastro\">Solicitar avaliação</a></nav>",
+      "css": ".ds-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; padding: 12px 24px; background: #000000; font-family: Manrope, ui-sans-serif, system-ui, sans-serif; } .ds-nav-link { min-height: 44px; display: inline-flex; align-items: center; color: #c9c9c3; font-size: 14px; font-weight: 600; text-decoration: none; transition: color 200ms ease-out; } .ds-nav-link:hover { color: #f7f6f2; } .ds-nav-link:focus-visible, .ds-nav-cta:focus-visible { outline: 3px solid var(--brand, #ff7417); outline-offset: 4px; } .ds-nav-cta { min-height: 48px; display: inline-flex; align-items: center; padding: 12px 20px; border: 1px solid var(--brand, #ff7417); border-radius: 8px; background: var(--brand, #ff7417); color: var(--brand-ink, #1f0d02); font-size: 14px; font-weight: 700; text-decoration: none; transition: background-color 200ms ease-out, color 200ms ease-out, transform 200ms ease-out; } .ds-nav-cta:hover { background: var(--brand-strong, #b94706); color: var(--surface, #ffffff); transform: translateY(-2px); }"
+    },
+    {
+      "name": "Linha de Benefício",
+      "kind": "custom",
+      "description": "Padrão editorial aberto que combina sinal de marca, título e explicação.",
+      "html": "<article class=\"ds-feature\"><span class=\"ds-feature-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 19h16M7 16l4-4 3 2 4-6M14 8h4v4\"/></svg></span><div><h3>Menos exposição a aumentos</h3><p>Produzir parte da própria energia reduz a dependência das variações tarifárias.</p></div></article>",
+      "css": ".ds-feature { display: grid; grid-template-columns: 48px 1fr; gap: 16px; padding: 24px 0; border-top: 1px solid var(--line, #d9d8d2); color: var(--ink, #11110f); font-family: Manrope, ui-sans-serif, system-ui, sans-serif; } .ds-feature-icon { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: #000000; color: var(--brand, #ff7417); } .ds-feature-icon svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; } .ds-feature h3 { margin: 0; font-size: 18px; line-height: 1.45; font-weight: 700; } .ds-feature p { margin: 8px 0 0; color: var(--ink-muted, #5d5e59); font-size: 14px; line-height: 1.5rem; }"
+    },
+    {
+      "name": "Cartão de Solução",
+      "kind": "card",
+      "refersTo": "card-dark",
+      "description": "Divisão aberta sobre campo preto para apresentar uma categoria de projeto solar.",
+      "html": "<article class=\"ds-solution\"><svg class=\"ds-solution-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 11.5 12 4l9 7.5M5.5 10v10h13V10M9 20v-6h6v6\"/></svg><h3>Residencial</h3><p>Para casas que buscam reduzir despesas mensais e produzir energia no próprio telhado.</p></article>",
+      "css": ".ds-solution { max-width: 360px; min-height: 320px; display: grid; align-content: space-between; gap: 56px; padding: 32px; border-top: 1px solid rgba(255,255,255,.2); border-bottom: 1px solid rgba(255,255,255,.2); background: #000000; color: #f7f6f2; font-family: Manrope, ui-sans-serif, system-ui, sans-serif; } .ds-solution-icon { width: 40px; height: 40px; fill: none; stroke: var(--brand, #ff7417); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-solution h3 { margin: 0; font-size: 24px; line-height: 1.3; font-weight: 700; } .ds-solution p { margin: 12px 0 0; color: #c9c9c3; font-size: 14px; line-height: 1.5rem; }"
+    },
+    {
+      "name": "Item de Dúvida",
+      "kind": "custom",
+      "description": "Pergunta expansível plana, separada por linhas e marcada com sinal laranja.",
+      "html": "<details class=\"ds-faq\"><summary class=\"ds-faq-summary\">Como é feita a avaliação inicial?</summary><p>Começamos pela localização e pela conta de luz. A análise considera consumo, características do imóvel e espaço disponível.</p></details>",
+      "css": ".ds-faq { border-top: 1px solid var(--line, #d9d8d2); color: var(--ink, #11110f); font-family: Manrope, ui-sans-serif, system-ui, sans-serif; } .ds-faq-summary { position: relative; min-height: 64px; display: flex; align-items: center; padding-right: 48px; cursor: pointer; list-style: none; font-size: 18px; font-weight: 700; } .ds-faq-summary::-webkit-details-marker { display: none; } .ds-faq-summary::after { content: '+'; position: absolute; right: 4px; color: var(--brand-strong, #b94706); font-size: 24px; font-weight: 500; } .ds-faq[open] > .ds-faq-summary::after { content: '−'; } .ds-faq p { max-width: 68ch; margin: 0; padding: 0 32px 24px 0; color: var(--ink-muted, #5d5e59); font-size: 14px; line-height: 1.5rem; } .ds-faq-summary:hover { color: var(--brand-strong, #b94706); } .ds-faq-summary:focus-visible { outline: 3px solid var(--brand, #ff7417); outline-offset: 4px; }"
+    },
+    {
+      "name": "Cartão de Formulário",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Superfície branca elevada que destaca a tarefa de conversão sobre campo preto.",
+      "html": "<section class=\"ds-form-card\"><h3>Conte sobre o seu projeto</h3><p>Todos os campos são obrigatórios.</p><label class=\"ds-form-card-field\"><span>Nome completo</span><input type=\"text\" placeholder=\"Como podemos chamar você?\"></label></section>",
+      "css": ".ds-form-card { max-width: 520px; padding: 32px; border-radius: 16px; background: var(--surface, #ffffff); color: var(--ink, #11110f); box-shadow: 0 18px 50px -26px rgb(0 0 0 / 38%); font-family: Manrope, ui-sans-serif, system-ui, sans-serif; } .ds-form-card h3 { margin: 0; font-size: 24px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; } .ds-form-card > p { margin: 8px 0 28px; color: var(--ink-muted, #5d5e59); font-size: 14px; } .ds-form-card-field { display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 700; } .ds-form-card-field input { min-height: 48px; padding: 0 14px; border: 1px solid var(--line, #d9d8d2); border-radius: 8px; background: var(--canvas, #f6f5f2); color: var(--ink, #11110f); font: 400 16px/1.6 Manrope, ui-sans-serif, system-ui, sans-serif; } .ds-form-card-field input:focus { border-color: var(--brand, #ff7417); outline: none; box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand, #ff7417) 15%, transparent); } .ds-form-card-field input:focus-visible { outline: 3px solid var(--brand, #ff7417); outline-offset: 4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Campo de Marca Preto e Laranja",
+    "overview": "A identidade parte da própria logo: preto como estrutura, laranja como sinal e branco ou off-white como espaço de leitura. O resultado é direto, confiável e comercial, com a clareza de uma proposta técnica e o calor necessário para uma marca de energia solar.\n\nAs páginas alternam áreas claras, informativas e arejadas com campos pretos concentrados nos momentos de escolha. O laranja aparece com intenção em chamadas, ícones, marcadores e foco; a fotografia editorial aproxima o tema sem se passar por prova de uma instalação real.",
+    "keyCharacteristics": [
+      "Contraste alto derivado da logo oficial.",
+      "Hierarquia tipográfica forte, compacta e legível.",
+      "Superfícies claras para explicar; campos pretos para decidir.",
+      "Laranja raro e funcional, usado como orientação e ação.",
+      "Bordas finas, cantos moderados e elevação contida."
+    ],
+    "rules": [
+      { "name": "The Laranja é Sinal Rule", "body": "Reserve o laranja para ação, orientação, foco e poucos ícones; sua raridade sustenta a hierarquia.", "section": "colors" },
+      { "name": "The Preto Estrutural Rule", "body": "Concentre o preto em momentos de decisão e em elementos de marca, sem transformar áreas longas de leitura em grandes massas escuras.", "section": "colors" },
+      { "name": "The Uma Família Rule", "body": "Use Manrope em toda a interface; a distinção vem de escala, peso, medida e espaçamento, não da mistura de famílias.", "section": "typography" },
+      { "name": "The Manchete Curta Rule", "body": "Mantenha títulos grandes concisos e com quebras controladas; não estenda o display por toda a largura da página.", "section": "typography" },
+      { "name": "The Leitura Antes da Densidade Rule", "body": "Preserve respiro entre grupos e use linhas ou mudança tonal para separar conteúdo; não empilhe caixas decorativas para criar estrutura.", "section": "layout" },
+      { "name": "The Elevação Contida Rule", "body": "Use sombra apenas para destacar imagem ou tarefa principal; se uma borda ou troca de superfície resolver a separação, mantenha o elemento plano.", "section": "elevation" },
+      { "name": "The Logo Íntegra Rule", "body": "Exiba o arquivo oficial sobre seu próprio campo preto, mantendo símbolo laranja e wordmark branco intactos.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do preserve a alternância entre superfícies claras de leitura e campos pretos de decisão.",
+      "Do use o laranja em CTAs, foco, ícones-chave e indicadores pequenos.",
+      "Do mantenha corpo legível, linhas curtas e alvos de toque de pelo menos 44px.",
+      "Do mantenha estados claro e escuro semanticamente equivalentes.",
+      "Do identifique fotografia editorial ilustrativa quando ela não comprovar um projeto real."
+    ],
+    "donts": [
+      "Don't redesenhe, recolora, arredonde ou retire o fundo preto da logo oficial.",
+      "Don't espalhe o laranja por grandes fundos ou por elementos sem função hierárquica.",
+      "Don't use gradientes, vidro decorativo, emoji ou ilustração genérica como ornamento.",
+      "Don't cubra áreas longas de leitura com preto; reserve campos escuros para conteúdo decisivo e conciso.",
+      "Don't adicione sombras a cada cartão ou controle.",
+      "Don't introduza depoimentos, números de economia, certificações ou imagens de obra como prova sem material confirmado."
+    ]
+  }
+}

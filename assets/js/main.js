@@ -1,5 +1,5 @@
 /* Configuração: informar o endpoint real antes de publicar a captação de leads. */
-const SITE_CONFIG = Object.freeze({ leadEndpoint: '' });
+const SITE_CONFIG = Object.freeze({ leadEndpoint: document.getElementById('leadForm')?.dataset.endpoint || '' });
 
 function initTheme() {
   const toggle = document.getElementById('themeToggle');
@@ -7,7 +7,7 @@ function initTheme() {
     const isDark = document.documentElement.dataset.theme === 'dark';
     toggle.setAttribute('aria-label', isDark ? 'Ativar tema claro' : 'Ativar tema escuro');
     toggle.setAttribute('aria-pressed', String(isDark));
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', isDark ? '#0f1b17' : '#f7faf7');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#000000');
   };
   toggle.hidden = false;
   updateLabel();
@@ -22,7 +22,7 @@ function initTheme() {
 function initNavigation() {
   const button = document.getElementById('menuToggle');
   const nav = document.getElementById('primaryNav');
-  const mobile = window.matchMedia('(max-width: 860px)');
+  const mobile = window.matchMedia('(max-width: 1023px)');
   const setOpen = (open) => {
     button.setAttribute('aria-expanded', String(open));
     button.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
@@ -33,6 +33,7 @@ function initNavigation() {
   nav.addEventListener('click', (event) => {
     const link = event.target.closest('a');
     if (!link || !mobile.matches) return;
+    if (link.pathname !== location.pathname) return;
     setOpen(false);
     const target = document.getElementById(link.hash.slice(1));
     if (target) {
@@ -51,6 +52,7 @@ function initNavigation() {
 
 function initLeadForm() {
   const form = document.getElementById('leadForm');
+  if (!form) return;
   const phone = document.getElementById('telefone');
   const message = document.getElementById('formMsg');
   const submit = form.querySelector('[type="submit"]');
